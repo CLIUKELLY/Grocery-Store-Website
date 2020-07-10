@@ -167,3 +167,13 @@
           }
 
         }
+        .footer {
+            position: fixed;
+            text-align: left;
+            padding: 3px;
+            background-color: rgb(101, 177, 130);
+            color: white;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+          }
