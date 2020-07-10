@@ -1,9 +1,4 @@
-<style>
-/* Style the body */
-body {
-  font-family: Arial;
-  margin: 0;
-}
+
 
 /* Header/Logo Title */
 .header {
@@ -84,8 +79,9 @@ body {
         table {
         border-collapse: collapse;
         border-spacing: 0;
-        width: 75%;
+        width: 70%;
         border: 1px solid #ddd;
+        float: left;
         }
         
         th, td {
@@ -107,23 +103,15 @@ body {
           box-sizing: border-box;
         }
         
-        .row {
-          display: -ms-flexbox; /* IE10 */
-          display: flex;
-          -ms-flex-wrap: wrap; /* IE10 */
-          flex-wrap: wrap;
-          margin: 0 -16px;
-        }
-        
         .col-25 {
           -ms-flex: 25%; /* IE10 */
           flex: 25%;
-          width: 35%;
-        }
-        
-        .col-25{
+          width: 30%;
           padding: 0 16px;
+          float: right;
+          
         }
+
         
         .container {
           background-color: #f2f2f2;
@@ -133,15 +121,13 @@ body {
         }
         
         input[type=text] {
-          width: 100%;
+          width: 10%;
           margin-bottom: 20px;
           padding: 12px;
           border: 1px solid #ccc;
           border-radius: 3px;
         }
-        
-
-        
+         
         .btn {
           background-color: #4CAF50;
           color: white;
@@ -179,5 +165,5 @@ body {
           .col-25 {
             margin-bottom: 20px;
           }
+
         }
-        </style>
