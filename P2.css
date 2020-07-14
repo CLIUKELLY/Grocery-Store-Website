@@ -72,7 +72,21 @@ body {
     padding: 14px 16px;
     text-decoration: none;
 }
+/*---------------
+Directory
+-----------------*/
+.path {
+    overflow: hidden;
+    background-color: rgb(219, 215, 206);
+}
 
+.path a {
+    float: left;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
 
 /*--------------------------------------
      Dropdown box in navigation bar
