@@ -3,10 +3,10 @@
 
 <head>
     <Title>
-        Beverage Aisle
+        Canada Dry
     </Title>
 
-    <link rel="stylesheet" href="p2.css">
+    <link rel="stylesheet" href="p3.css">
 </head>
 <!-------------------------------------------------
     Container: contains Header, content, footer
@@ -20,7 +20,6 @@
             <br>
             <h1>WELCOME TO</h1>
             <p>SOEN287 Grocery</p>
-            <p>Beverage Aisle</p>
 
         </div>
 
@@ -48,69 +47,48 @@
             Main content section
         --------------------------------------------------->
         <section class="main">
-            <!--Beverage products-->
-            <br>
 
-            <div class="row">
-                <div class="column">
-                    <div class="card">
-                        <img src="CANADA DRY Ginger Ale.jpeg" alt="Canada Dry" style="width:100%">
-                        <div class="container">
-
-                            <p><button class="button">Shop</button></p>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="card">
-                        <img src="COCA-COLA.jpeg" alt="Jane" style="width:100%">
-                        <div class="container">
-
-                            <p><button class="button">Shop</button></p>
-                        </div>
+            <div class="product-info item-addTOCart">
+                <div class="product-info--first-col">
+                    <div class="product-info--product--img">
+                        <img src="CANADA DRY Ginger Ale.jpeg" alt="Canada Dry">
                     </div>
                 </div>
-                <div class="column">
-                    <div class="card">
-                        <img src="ESKA Natural Spring Water.jpeg" alt="Jane" style="width:100%; height: 95%;">
-                        <div class="container">
-
-                            <p><button class="button">Shop</button></p>
-                        </div>
+                <div class="product-info--second-col">
+                    <div class="product-info--name">
+                        <h1>Canada Dry</h1>
                     </div>
-                    <br>
-                    <div class="card">
-                        <img src="MAXWELL HOUSE Original Roast Ground Coffee.jpeg" alt="Jane" style="width:100%">
-                        <div class="container">
-
-                            <p><button class="button">Shop</button></p>
-                        </div>
+                    <div class="product-info--price">
+                        <span class="product-info--price">$6.29</span>
                     </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <img src="PERRIER Carbonated natural spring water.jpeg" alt="Jane" style="width:100%">
-                        <div class="container">
-
-                            <p><button class="button">Shop</button></p>
-                        </div>
+                    <div class="product-quantity">
+                        <input type="product quantity" style="width: 100px;" placeholder="Add quantity">
                     </div>
-                    <br>
-                    <div class="card">
-                        <img src="PEPSI.jpeg" alt="Jane" style="width:100%">
-                        <div class="container">
-
-                            <p><button class="button">Shop</button></p>
+                    <div class="product-info--add-to-cart">
+                        <button id="button--addToCart" type="button" aria-label="Add to the shopping cart">
+                            <span class="cp_label">Add to Cart</span>
+                        </button>
+                    </div>
+                    <div class="product-info--accordion-list">
+                        <button class="accordion--btn">
+                            "More Description"
+                        </button>
+                        <div class="accordion--text" style="display:block;">
+                            <p>
+                                "Canada Dry® Ginger Ale is a genuine Canadian sparkling favourite with a crisp, clean light and refreshing taste.
+                            </p>
                         </div>
                     </div>
 
                 </div>
             </div>
+            <!--Footer-->
+            <div class="footer">
+                <p>Address: 123 Rue ABC, Montreal, QC H8G 9X7
+                </p>
+            </div>
+
         </section>
-        <!--Footer-->
-        <div class="footer">
-            <p>Address: 123 Rue ABC, Montreal, QC H8G 9X7
-            </p>
-        </div>
 </div>
 </body>
 

@@ -1,6 +1,5 @@
 * {
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
 
 *,
@@ -122,56 +121,38 @@ body {
 
 
 /*----------------
-     Aisle Menu
+     Product
   ---------------*/
 
-.column {
+.product-info--first-col {
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-left: 10rem;
+    position: relative;
+    width: 30%;
     float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
+    background-color: rgb(219, 215, 206);
 }
 
-@media screen and (max-width: 650px) {
-    .column {
-        width: 100%;
-        display: block;
-    }
+.product-info--second-col {
+    width: 60%;
+    position: relative;
+    float: right;
+    padding-left: 5rem;
+    padding-right: 10rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    background-color: rgb(219, 215, 206);
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container {
-    padding: 0 16px;
-}
-
-.container::after,
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.title {
-    color: grey;
-}
-
-.button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: rgb(47, 65, 53);
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-}
-
-.button:hover {
-    background-color: #555;
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 
