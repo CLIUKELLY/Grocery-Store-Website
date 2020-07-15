@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <Title>
+        Shopping Cart
+    </Title>
+    <link rel="stylesheet" href="p4.css">
+
+</head>
+
+<!-------------------------------------------------
+    Container: contains Header, content, footer
+--------------------------------------------------->
+
+<div id="container">
+
+    <body>
+        <div class="header">
+            <br>
+            <h1>WELCOME TO</h1>
+            <p>SOEN287 Grocery</p>
+            <p>Cart</p>
+
+        </div>
+        <!-------------------------------------------------
+            Navigation Bar
+        --------------------------------------------------->
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Aisle
+                <i class="fa fa-caret-down"></i>
+
+            </button>
+                <div class="dropdown-content">
+                    <a href="#">Snack</a>
+                    <a href="#">Beverage</a>
+                    <a href="#">Vegetable</a>
+                    <a href="#">Meat</a>
+                </div>
+            </div>
+
+            <a href="#profile">Profile</a>
+            <a href="#signIn">Sign in</a>
+            <a href="#myCart">My Cart</a>
+
+
+        </div>
+
+        <!-------------------------------------------------
+            Main content section
+        --------------------------------------------------->
+        <section class="main">
+            <div class="row">
+           
+
+            <!-------------------------------------------------
+                 Shopping Cart List
+            --------------------------------------------------->
+            <div class="shopping-cart">
+                <br>
+                <h2>Shopping Cart</h2>
+                <form name="ShoppingList">
+
+                    <table>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Delete</th>
+                        </tr>
+                        <tr>
+                            <td>Tomato</td>
+                            <td>6</td>
+                            <td><input type="button" value="-" onclick="removeItem()"> 3
+                                <input type="button" value="+" onclick="addItem()">
+                            </td>
+                            <td>
+                                <input type="button" value="Delete" onclick="deleteItem()">
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Bottled Water</td>
+                            <td>2</td>
+                            <td><input type="button" value="-" onclick="removeItem()"> 12
+                                <input type="button" value="+" onclick="addItem()">
+                            </td>
+                            <td>
+                                <input type="button" value="Delete" onclick="deleteItem()">
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Potato Chips</td>
+                            <td>4</td>
+                            <td><input type="button" value="-" onclick="removeItem()"> 2
+                                <input type="button" value="+" onclick="addItem()">
+                            </td>
+                            <td>
+                                <input type="button" value="Delete" onclick="deleteItem()">
+
+                            </td>
+
+                        </tr>
+                    </table>
+                    
+                </form>
+
+      
+            </div>
+
+
+            
+            <!-------------------------------------------------
+                  Shopping Cart Summary
+             --------------------------------------------------->
+    
+                <div class="cart-summary">
+                    <div class="cart-summary-container">
+                        <h4>Cart Summary
+                            <span class="price" style="color:black">
+                        <i class="fa fa-shopping-cart"></i> <p>Number of Items 3</p>
+                        </span>
+                        </h4>
+                        <p><a href="#">Tomato</a> <span class="price">$15</span></p>
+                        <p><a href="#">Bottled Water</a> <span class="price">$5</span></p>
+                        <p><a href="#">Potato Chips</a> <span class="price">$8</span></p>
+                        <hr>
+                        <p>QST <span class="price" style="color:rgb(75, 73, 73)"><b>$2.56</b></span></p>
+                        <p>GST <span class="price" style="color:rgb(75, 73, 73)"><b>$3.88</b></span></p>
+                        <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+                    </div>
+                </div>
+      
+                 
+        </div>
+ 
+        <div class="continue-shopping">
+            <input type="button" value="Continue Shopping">
+        </div>
+
+        </section>
+        <!-------------------------------------------------
+            Footer
+        --------------------------------------------------->
+        <footer>
+            <div class="footer">
+                <p>Address: 123 Rue ABC, Montreal, QC H8G 9X7
+                </p>
+            </div>
+        </footer>
+    </body>
+</div>
+
+</html>
