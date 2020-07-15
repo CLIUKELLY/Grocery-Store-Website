@@ -52,6 +52,13 @@ body {
     height: 1500px;
     background: rgb(219, 215, 206);
     padding-bottom: 50px;
+
+}
+
+.product-list{
+
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 
