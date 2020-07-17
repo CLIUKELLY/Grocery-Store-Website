@@ -1,0 +1,129 @@
+<html>
+</head>
+	<Title>
+		Potato Chip | Daily Fresh
+    </Title>
+
+    <link rel="stylesheet" href="P3_Snacks.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<div id="container">
+<body>
+        <!--Banner-->
+        <div class="header">
+            <h1>WELCOME TO</h1>
+            <h2><i>Daily Fresh</i></h2>
+        </div>
+
+        <!--Navigation Bar-->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Aisle
+                <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content">
+                    <a href="P2_Snacks.html">Snack</a>
+                    <a href="P2_Beverage.html">Beverage</a>
+                    <a href="P2_Vege.html">Vegetable</a>
+                    <a href="P2_meat.html">Meat</a>
+                    <a href="P2_organic_groceries.html">Organic groceries</a>
+                </div>
+            </div>
+            <a href="P5_Sign_in.html">Sign in</a>
+            <a href="P4.html">My Cart</a>
+            <div class="dropdown">
+                <button class="dropbtn">Back Store
+                <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content">
+                    <a href="P9.html">User</a>
+                    <a href="P7.html">Product</a>
+                    <a href="P11.html">Order</a>
+                </div>
+            </div>
+        </div>
+        <div class="path">
+            <br>&nbsp;&nbsp;Home&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;
+            Aisle&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;Snacks&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;Potato chip
+        </div>
+
+
+    <script>
+        function calchipmoney(valNum) {
+          document.getElementById("potato_p").innerHTML=(valNum*2.1).toFixed(2);
+        }
+        function potatoChipInfo() {
+          var text="Always fresh tasting, crispy and delicious," +
+           "each bag of Lay's Classic potato chips is made with specially selected potatoes" +
+           " and to the highest quality standards. Crispy and light tasting, Lay's Classic " +
+           "potato chips were designed to put a smile on everyone's face, which makes them " +
+           "the perfect snack to share. Whether you keep a bag in your desk to complement " +
+           "your chicken salad sandwich at lunchtime or grab a bag to share at your next " +
+           "social occasion, Lay's Classic® chips will surely brighten your day! It's the 'Classic' snack" +
+           " tradition Canadians love!";
+          document.getElementById("potatoChipInfo").innerHTML=text;
+        }
+        
+     </script>
+
+    <div class="wrapper">
+    <br/>
+    <br/>
+    <br/>
+    <!--potato chip-->
+    <div class="col-3 col-s-3">
+        <img src="image_product/potato_chip.PNG"  width="200" height="230">
+    </div>
+    <div class="col-3 col-s-12">
+        <p>
+        <ul>
+            <li>
+                <h1 id="potato_chip">Potato chip</h1>
+            </li>
+            <li>
+                <p>$2.10</p>
+            </li>
+            <li>
+                <h4>Ingredients:</h4>
+                <p>Specially selected potatoes, vegetable oil, salt.</p>
+                <p>Gluten-Free.</p>
+            </li>
+            <li>
+                <h4>Weight:</h4>
+                <p>235g</p>
+            </li>
+            <li>
+                <button onclick="potatoChipInfo()">More Description</button>
+                <div class="breakWd"><p id="potatoChipInfo"></p></div>
+            </li>
+            <li>
+                <form action="P4.html">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" size="2" min="1" max="99" oninput="calchipmoney(this.value)" onchange="calchipmoney(this.value)">
+                    &nbsp&nbsp<label id="potato_p">0</label><label>CAD &nbsp&nbsp</label>
+                    <button type="submit">Add to Cart</button>  
+                </form>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+            </li>
+        </ul>
+
+    </p>
+    <br/>
+    <br/>
+    <div class="push"></div>
+    </div>
+   
+        <!--Footer-->
+        <div class="footer">
+            <p>Address: 123 Rue ABC, Montreal, QC H8G 9X7</p>
+        </div>
+
+</body>
+</div>
+</html>
