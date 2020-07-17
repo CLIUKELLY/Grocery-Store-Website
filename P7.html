@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <Title>
+        Back Store Product List
+    </Title>
+    <link rel="stylesheet" href="P7.css">
+
+    <style>
+        #products {
+          color:black;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        #products td, #products th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        
+        #products tr:nth-child(even){background-color: #f2f2f2;}
+        
+        #products tr:hover {background-color: #ddd;}
+        
+        #products th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color:rgb(101, 177, 130);
+          color: white;
+        }
+        </style>
+
+</head>
+
+<!-------------------------------------------------
+    Container: contains Header, content, footer
+--------------------------------------------------->
+
+<div id="container">
+
+    <body>
+        <div class="header">
+            <h1>WELCOME TO</h1>
+            <h2><i>Daily Fresh Back Store Back Store</i></h2>
+        </div>
+        <!--Navigation Bar-->
+
+        <div class="navbar">
+            <a href="Index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Aisle
+                <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content">
+                    <a href="P2_Snacks.html">Snack</a>
+                    <a href="P2_Beverage.html">Beverage</a>
+                    <a href="P2_Vege.html">Vegetable</a>
+                    <a href="P2_meat.html">Meat</a>
+                    <a href="P2_organic_groceries.html">Organic groceries</a>
+                </div>
+            </div>
+            <a href="P5_Sign_in.html">Sign in</a>
+            <a href="P4.html">My Cart</a>
+            <div class="dropdown">
+                <button class="dropbtn">Back Store
+                <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content">
+                    <a href="P9.html">User</a>
+                    <a href="P7.html">Product</a>
+                    <a href="#">Order</a>
+
+                </div>
+            </div>
+
+        </div>
+        
+        <!-------------------------------------------------
+            Product List
+        --------------------------------------------------->
+        <section class="main">
+            
+            <br>&nbsp; &nbsp; <a href="P8.html"><button>ADD NEW PRODUCT</button></a><br><br>
+            <table id="products">
+                <tr>
+                    <th>Product Name</th>
+                    <th>Type</th>
+                    <th>Quantity</th>
+                    <th>Operation</th>
+                </tr>
+                <tr>
+                    <td>Potato Chips</td>
+                    <td>Snack</td>
+                    <td>100</td>
+                    <td><div class="row">
+                        <button onclick="deleteProduct()">DELETE</button>
+                        <a href="P8.html"><button >EDIT</button></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Popcorn</td>
+                    <td>Snack</td>
+                    <td>100</td>
+                    <td><div class="row">
+                        <button onclick="deleteProduct()">DELETE</button>
+                        <a href="P8.html"><button >EDIT</button></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                  <td>Mixed-nuts</td>
+                  <td>Snack</td>
+                  <td>100</td>
+                  <td><div class="row">
+                    <button onclick="deleteProduct()">DELETE</button>
+                    <a href="P8.html"><button >EDIT</button></a>
+                    </div>
+                </td>
+                </tr>
+                <tr>
+                  <td>Ginger Ale</td>
+                  <td>Beverage</td>
+                  <td>100</td>
+                  <td><div class="row">
+                    <button onclick="deleteProduct()">DELETE</button>
+                    <a href="P8.html"><button >EDIT</button></a>
+                    </div>
+                </td>
+                </tr>
+                <tr>
+                  <td>COCA-COLA</td>
+                  <td>Beverage</td>
+                  <td>100</td>
+                  <td><div class="row">
+                    <button onclick="deleteProduct()">DELETE</button>
+                    <a href="P8.html"><button >EDIT</button></a>
+                    </div>
+                </td>
+                </tr>
+                <tr>
+                  <td>ESKA</td>
+                  <td>Beverage</td>
+                  <td>100</td>
+                  <td><div class="row">
+                    <button onclick="deleteProduct()">DELETE</button>
+                    <a href="P8.html"><button >EDIT</button></a>
+                    </div>
+                </td>
+                </tr>
+                
+                <tr>
+                    <td>Apple Cider Vinegar</td>
+                    <td>Origanic</td>
+                    <td>100</td>
+                    <td><div class="row">
+                        <button onclick="deleteProduct()">DELETE</button>
+                        <a href="P8.html"><button >EDIT</button></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Blue Corn Tortillas</td>
+                    <td>Origanic</td>
+                    <td>100</td>
+                    <td><div class="row">
+                        <button onclick="deleteProduct()">DELETE</button>
+                        <a href="P8.html"><button >EDIT</button></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Celery</td>
+                    <td>Origanic</td>
+                    <td>100</td>
+                    <td><div class="row">
+                        <button onclick="deleteProduct()">DELETE</button>
+                        <a href="P8.html"><button >EDIT</button></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>T-bone Steak</td>
+                    <td>Meat</td>
+                    <td>100</td>
+                    <td><div class="row">
+                        <button onclick="deleteProduct()">DELETE</button>
+                        <a href="P8.html"><button >EDIT</button></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ground Beef</td>
+                    <td>Meat</td>
+                    <td>100</td>
+                    <td><div class="row">
+                        <button onclick="deleteProduct()">DELETE</button>
+                        <a href="P8.html"><button >EDIT</button></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bacon</td>
+                    <td>Meat</td>
+                    <td>100</td>
+                    <td><div class="row">
+                        <button onclick="deleteProduct()">DELETE</button>
+                        <a href="P8.html"><button >EDIT</button></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bottom Blade Pot Roast</td>
+                    <td>Meat</td>
+                    <td>100</td>
+                    <td><div class="row">
+                        <button onclick="deleteProduct()">DELETE</button>
+                        <a href="P8.html"><button >EDIT</button></a>
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>Carrot</td>
+                    <td>Vegetable</td>
+                    <td>100</td>
+                    <td><div class="row">
+                        <button onclick="deleteProduct()">DELETE</button>
+                        <a href="P8.html"><button >EDIT</button></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lettuce</td>
+                    <td>Vegetable</td>
+                    <td>100</td>
+                    <td><div class="row">
+                        <button onclick="deleteProduct()">DELETE</button>
+                        <a href="P8.html"><button >EDIT</button></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tomato</td>
+                    <td>Vegetable</td>
+                    <td>100</td>
+                    <td><div class="row">
+                        <button onclick="deleteProduct()">DELETE</button>
+                        <a href="P8.html"><button >EDIT</button></a>
+                        </div>
+                    </td>
+                </tr>
+              </table>
+        </section>
+         <!-------------------------------------------------
+            Footer
+        --------------------------------------------------->
+        <footer>
+            <div class="footer">
+                <br><p>&nbsp;&nbsp;Address: 123 Rue ABC, Montreal, QC H8G 9X7</p>
+            </div>
+        </footer>
+</body>
