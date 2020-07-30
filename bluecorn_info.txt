@@ -1,0 +1,8 @@
+                            <br>Product Number: 068826176002
+                            <br>$4.19 ea.
+                            <br>Organic product
+                            <br>
+                            <form action="shopingCart.html" method="post">
+                            <p>Quantity: <input type="text" name="Quantity" /></p>
+                            <input type="submit" value="Add to shopping cart" />
+                            </form>
