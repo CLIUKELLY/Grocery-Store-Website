@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <Title>
+        Organic Groceries Aisle
+    </Title>
+
+    <link rel="stylesheet" href="P3.css">
+
+</head>
+<!-------------------------------------------------
+    Container: contains Header, content, footer
+--------------------------------------------------->
+
+<div id="container">
+
+    <body>
+
+
+
+        <!--Banner-->
+        <div class="header">
+            <br>
+            <h1>WELCOME TO</h1>
+            <p>Daily Fresh</p>
+            <p>Organic Groceries Aisle</p>
+
+        </div>
+        <!--Navigation Bar-->
+
+        <div class="navbar">
+            <a href="Index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Aisle
+                <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content">
+                    <a href="P2_Snacks.html">Snack</a>
+                    <a href="P2_Beverage.html">Beverage</a>
+                    <a href="P2_Vege.html">Vegetable</a>
+                    <a href="P2_meat.html">Meat</a>
+                    <a href="P2_organic_groceries.html">Organic groceries</a>
+                </div>
+            </div>
+            <a href="P5_Sign_in.html">Sign in</a>
+            <a href="P4.html">My Cart</a>
+            <div class="dropdown">
+                <button class="dropbtn">Back Store
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="P9.html">User</a>
+                    <a href="P7.html">Product</a>
+                    <a href="P11_order_list.html">Order List</a>
+
+                </div>
+            </div>
+
+        </div>
+        <!-------------------------------------------------
+        Main content section
+    --------------------------------------------------->
+        <section class="main">
+            <!--Beverage products-->
+            <br>
+
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="OrganicCelery.jpg" alt="Organic celery" style="width:100%">
+                        <p class="container">
+                            <a class="folder" href="#item1">
+                                <button class="button" type="button" id="celerbtn">
+                                More Description
+                            </button>
+                            </a>
+                            <p class="folder" id="item1">
+                            </p>
+                            <script>
+                                document.getElementById("celerbtn").onclick = celer;
+
+                                function celer() {
+                                    var xhr = new XMLHttpRequest();
+
+                                    xhr.open("GET", "celer_info.txt", true);
+                                    xhr.send();
+
+                                    xhr.onreadystatechange = function() {
+                                        if (xhr.readyState === 4 && xhr.status === 200) {
+                                            document.getElementById("item1").innerHTML = xhr.responseText;
+                                        }
+                                    }
+                                }
+                            </script>
+
+
+
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <img src="OrganicAppleCiderVinegar.jpg" alt="Organic apple cider vinegar" style="width:100%">
+                    <div class="container">
+
+
+                        <a class="folder" href="#item2">
+                            <button class="button" type="button" id="cidervinegarbtn">
+                                More Description
+                            </button>
+                        </a>
+                        <p class="folder" id="item2">
+                        </p>
+                        <script>
+                            document.getElementById("cidervinegarbtn").onclick = cidervinegar;
+
+                            function cidervinegar() {
+                                var xhr = new XMLHttpRequest();
+
+                                xhr.open("GET", "cidervinegar_info.txt", true);
+                                xhr.send();
+
+                                xhr.onreadystatechange = function() {
+                                    if (xhr.readyState === 4 && xhr.status === 200) {
+                                        document.getElementById("item2").innerHTML = xhr.responseText;
+                                    }
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="OrganicBlueCornTortillasWithFlax.jpg" alt="Organic blue corn tortilla with flax" style="width:100%; height: 95%;">
+                    <div class="container">
+
+
+                        <a class="folder" href="#item3">
+                            <button class="button" type="button" id="bluecorn">
+                                More Description
+                            </button>
+                        </a>
+                        <p class="folder" id="item3">
+                        </p>
+                        <script>
+                            document.getElementById("bluecornbtn").onclick = bluecorn;
+
+                            function bluecorn() {
+                                var xhr = new XMLHttpRequest();
+
+                                xhr.open("GET", "bluecorn_info.txt", true);
+                                xhr.send();
+
+                                xhr.onreadystatechange = function() {
+                                    if (xhr.readyState === 4 && xhr.status === 200) {
+                                        document.getElementById("item3").innerHTML = xhr.responseText;
+                                    }
+                                }
+                            }
+                        </script>
+
+
+                    </div>
+                </div>
+                <br>
+            </div>
+</div>
+</div>
+<br>
+</div>
+
+</div>
+</div>
+</section>
+<!--Footer-->
+<div class="footer">
+    <p>Address: 123 Rue ABC, Montreal, QC H8G 9X7
+    </p>
+</div>
+</div>
+</body>
+
+</html>
