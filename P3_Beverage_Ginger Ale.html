@@ -121,6 +121,7 @@
 </div>
 
 <script>
+    //collapsble button
     var coll = document.getElementsByClassName("collapsible");
     var i;
 
@@ -150,12 +151,15 @@
         quantity.value = localStorage.getItem('Quantity1');
     })
     subQ[0].addEventListener("click", function() {
+        if (localStorage.quantity1 == 0) {
+            return;
+        }
         localStorage.Quantity1--;
         quantity.value = localStorage.getItem('Quantity1');
     })
 
     var subtotal = quantity.value;
-    document.getElementById("subtotal").innerHTML = "$" + localStorage.Quantity1 * 6.99.toFixed(2);
+    document.getElementById("subtotal").innerHTML = "$" + (localStorage.Quantity1 * 6.99).toFixed(2);
 </script>
 </body>
 
