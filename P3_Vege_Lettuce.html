@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <Title>
+        Lettuce
+    </Title>
+    <link rel="stylesheet" href="P3_Vege.css">
+
+</head>
+
+<!-------------------------------------------------
+    Container: contains Header, content, footer
+--------------------------------------------------->
+
+<div id="container">
+
+    <body>
+        <div class="header">
+            <h1>WELCOME TO</h1>
+            <h2><i>Daily Fresh</i></h2>
+        </div>
+        <!-------------------------------------------------
+            Navigation Bar
+        --------------------------------------------------->
+        <div class="navbar">
+            <a href="Index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Aisle
+                <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content">
+                    <a href="P2_Snacks.html">Snack</a>
+                    <a href="P2_Beverage.html">Beverage</a>
+                    <a href="P2_Vege.html">Vegetable</a>
+                    <a href="P2_meat.html">Meat</a>
+                    <a href="P2_organic_groceries.html">Organic groceries</a>
+                </div>
+            </div>
+            <a href="P5_Sign_in.html">Sign in</a>
+            <a href="P4.html">My Cart</a>
+            <div class="dropdown">
+                <button class="dropbtn">Back Store
+                <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content">
+                    <a href="P9.html">User</a>
+                    <a href="P7.html">Product</a>
+                    <a href="#">Order</a>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="path">
+            <br><a href="Index.html">&nbsp;&nbsp;Home&nbsp;&nbsp;</a> 
+            <a> &gt;&gt;&nbsp;&nbsp;Aisle&nbsp;&nbsp;</a>
+            <a href="P2_Vege.html">&gt;&gt;&nbsp;&nbsp;Vegetable&nbsp;&nbsp;</a>
+            <a> &gt;&gt;&nbsp;&nbsp;Lettuce&nbsp;&nbsp;</a>
+            
+        </div>
+        
+        <!-------------------------------------------------
+            Product description
+        --------------------------------------------------->
+        <section class="main">
+            <!--Aisle Menu-->
+            <br><br><br><br>
+            <div class="center-left">
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <img src="Vegetable_Lettuce.jpeg" alt="Jane" style="width:100%" >
+                        </div>
+                        <br>
+                    </div>
+                    <div class="column">
+                        <div class="productName">&nbsp;&nbsp;&nbsp;Lettuce</div>
+                        <div class="price">&nbsp;&nbsp;&nbsp;$2.79 / <b>EA</b></div><br><br>
+                        
+                        <form>
+                            <div class="column-1">
+                                <label for="quantity" class="productDetail">Quantity:</label>
+                                <button class="sub" style="width: 20px;">-</button>
+                                <input type="text" id="quantity" name="quantity" value="0">
+                                <button class="add" style="width: 20px;">+</button>
+                                <br><br>
+                            </div>
+                            <div class="column-1">
+                                <p id=subtotal style="font-size: 20px;"><b>$0</b></p>
+                                <br><br>
+                            </div>
+                            <div class="column-1">
+                                <button class="button">ADD TO CART</button>
+                            </div>
+                        </form>
+
+                        <br><br>
+                        <button type="button" class="collapsible">MORE DESCRIPTION</button>
+                        <div class="productDetail">
+                            <br>
+                            <p>Freshest Lettuce grew by Quebec local farms.</p><br> 
+                            <p>In Stock:100</p>
+                            <p>Size: 500g</p>
+                            <p>Type: Vegetable</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-------------------------------------------------
+            Footer
+        --------------------------------------------------->
+        <footer>
+            <div class="footer">
+                <br><p>&nbsp;&nbsp;Address: 123 Rue ABC, Montreal, QC H8G 9X7</p>
+            </div>
+        </footer>
+
+        <script>
+            var collapsible = document.getElementsByClassName("collapsible");
+            var quantity = document.getElementById('quantity')
+            var addQuantity = document.getElementsByClassName('add')
+            var subQuantity = document.getElementsByClassName('sub')
+            var maxQuantity = 100;
+            quantity.value = 0;
+
+            for (var i = 0; i < collapsible.length; i++) {
+                collapsible[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+            //local temporary storage of quantity
+            if (localStorage.Quantity2) {
+                quantity.value = localStorage.getItem('Quantity2');
+            } else {
+                localStorage.setItem('Quantity2', 0); 
+            }
+
+            subQuantity[0].addEventListener("click", function() {
+                //if the quantity will become nagetive, stop using sub
+                if (localStorage.Quantity2 == 0) {
+                    return;
+                }
+                //sub quantity
+                localStorage.Quantity2--;
+                quantity.value = localStorage.getItem('Quantity2');
+            })
+
+            addQuantity[0].addEventListener("click", function() {
+                //if the quantity will exceed the in stock quantity, stop using add
+                if (localStorage.Quantity2 > maxQuantity-1) {
+                    return;
+                }
+                //add quantity
+                localStorage.Quantity2++;
+                quantity.value = localStorage.getItem('Quantity2');
+            })
+            //calculate the total price
+            var subtotal = quantity.value;
+            var finalPrice = localStorage.Quantity2 * 2.79
+            document.getElementById("subtotal").innerHTML = "$" + finalPrice.toFixed(2);
+        </script>
+</body>
