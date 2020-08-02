@@ -92,6 +92,10 @@
                                 <br><br>
                             </div>
                             <div class="column-1">
+                                <p id=subtotal style="font-size: 20px;"><b>$0</b></p>
+                                <br><br>
+                            </div>
+                            <div class="column-1">
                                 <button class="btn_addToCart">ADD TO CART</button>
                             </div>
                         </form>
@@ -151,11 +155,10 @@
 
     console.log(localStorage)
 
-    var carts = document.getElementsByClassName("btn_addToCart");
 
-    carts.addEventListener("click", () => {
-        console.log("added to cart")
-    })
+
+    var subtotal = quantity.value;
+    document.getElementById("subtotal").innerHTML = "$" + localStorage.Quantity * 6.29.toFixed(2);
 </script>
 </body>
 

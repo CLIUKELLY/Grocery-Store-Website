@@ -93,6 +93,10 @@
                                 <br><br>
                             </div>
                             <div class="column-1">
+                                <p id=subtotal style="font-size: 20px;"><b>$0</b></p>
+                                <br><br>
+                            </div>
+                            <div class="column-1">
                                 <button class="btn_addToCart">ADD TO CART</button>
                             </div>
                         </form>
@@ -149,6 +153,9 @@
         localStorage.Quantity1--;
         quantity.value = localStorage.getItem('Quantity1');
     })
+
+    var subtotal = quantity.value;
+    document.getElementById("subtotal").innerHTML = "$" + localStorage.Quantity1 * 6.99.toFixed(2);
 </script>
 </body>
 

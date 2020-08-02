@@ -7,7 +7,6 @@
     </Title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="P3_Beverage.css">
-    <script src="P3_Beverage.js"></script>
 </head>
 <!-------------------------------------------------
     Container: contains Header, content, footer
@@ -89,13 +88,17 @@
                         <form>
                             <div class="column-1">
                                 <label for="quantity" class="productDetail">Quantity:</label>
-								<button class="sub" style="width: 20px;">-</button>
+                                <button class="sub" style="width: 20px;">-</button>
                                 <input type="text" id="quantity" name="quantity" value="0">
-								<button class="add" style="width: 20px;">+</button>
-								<br><br>
+                                <button class="add" style="width: 20px;">+</button>
+                                <br><br>
                             </div>
                             <div class="column-1">
-                                <button class="btn_addToCart" >ADD TO CART</button> 
+                                <p id=subtotal style="font-size: 20px;"><b>$0</b></p>
+                                <br><br>
+                            </div>
+                            <div class="column-1">
+                                <button class="btn_addToCart">ADD TO CART</button>
                             </div>
                         </form>
                         <br><br>
@@ -118,40 +121,42 @@
         </section>
 </div>
 <script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
 
-for (i = 0; i < coll.length; i++) {
-coll[i].addEventListener("click", function() {
-this.classList.toggle("active");
-var content = this.nextElementSibling;
-if (content.style.display === "block") {
-  content.style.display = "none";
-} else {
-  content.style.display = "block";
-}
-});
-}
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
 
-var quantity = document.getElementById('quantity')
-var addQ = document.getElementsByClassName('add')
-var subQ = document.getElementsByClassName('sub')
-quantity.value=0;
-if(localStorage.Quantity2){
-	quantity.value = localStorage.getItem('Quantity2');
-}else{
-	localStorage.setItem('Quantity2',0);  //Temporary storage
-}
+    var quantity = document.getElementById('quantity')
+    var addQ = document.getElementsByClassName('add')
+    var subQ = document.getElementsByClassName('sub')
+    quantity.value = 0;
+    if (localStorage.Quantity2) {
+        quantity.value = localStorage.getItem('Quantity2');
+    } else {
+        localStorage.setItem('Quantity2', 0); //Temporary storage
+    }
 
-addQ[0].addEventListener("click",function(){
-	localStorage.Quantity2++;
-	quantity.value = localStorage.getItem('Quantity2');
-})
-subQ[0].addEventListener("click",function(){
-	localStorage.Quantity2--;
-	quantity.value = localStorage.getItem('Quantity2');
-})
+    addQ[0].addEventListener("click", function() {
+        localStorage.Quantity2++;
+        quantity.value = localStorage.getItem('Quantity2');
+    })
+    subQ[0].addEventListener("click", function() {
+        localStorage.Quantity2--;
+        quantity.value = localStorage.getItem('Quantity2');
+    })
 
+    var subtotal = quantity.value;
+    document.getElementById("subtotal").innerHTML = "$" + localStorage.Quantity2 * 5.29.toFixed(2);
 </script>
 </body>
 
