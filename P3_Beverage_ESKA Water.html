@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <Title>
+        ESKA Natural Spring Water
+    </Title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="P3_Beverage.css">
+    <script src="P3_Beverage.js"></script>
+</head>
+<!-------------------------------------------------
+    Container: contains Header, content, footer
+--------------------------------------------------->
+
+<div id="container">
+
+    <body>
+        <!--Banner-->
+        <div class="header">
+            <br>
+            <h1>WELCOME TO</h1>
+            <h2>
+                <I>Daily Fresh</I>
+            </h2>
+
+        </div>
+
+        <!--Navigation Bar-->
+
+
+        <div class="navbar">
+            <a href="Index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Aisle
+                <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content">
+                    <a href="P2_Snacks.html">Snack</a>
+                    <a href="P2_Beverage.html">Beverage</a>
+                    <a href="P2_Vege.html">Vegetable</a>
+                    <a href="P2_meat.html">Meat</a>
+                    <a href="P2_organic_groceries.html">Organic groceries</a>
+                </div>
+            </div>
+            <a href="P5_Sign_in.html">Sign in</a>
+            <a href="P4.html">My Cart</a>
+            <div class="dropdown">
+                <button class="dropbtn">Back Store
+                <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content">
+                    <a href="P9.html">User</a>
+                    <a href="P7.html">Product</a>
+                    <a href="P11_order_list.html">Order List</a>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--directory-->
+        <div class="path">
+            <br><a href="Index.html">&nbsp;&nbsp;Home&nbsp;&nbsp;</a>
+            <a> &gt;&gt;&nbsp;&nbsp;Aisle&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;Beverage&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;ESKA Natural Spring Water </a>
+
+        </div>
+        <!-------------------------------------------------
+            Main content section
+        --------------------------------------------------->
+        <section class="main">
+
+
+            <!--Aisle Menu-->
+            <br><br><br><br>
+            <div class="center-left">
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <img src="ESKA Natural Spring Water.jpeg" alt="ESKA Water" width="250px" heigh="250px">
+                        </div>
+                        <br>
+                    </div>
+                    <div class="column">
+                        <div class="productName">&nbsp;&nbsp;&nbsp;ESKA Water</div>
+                        <div class="price">&nbsp;&nbsp;&nbsp;$5.29 / <b>EA</b></div><br><br>
+                        <div class="productDetail">Eska® natural spring water comes from St-Mathieu d'Harricana, Quebec.</div><br>
+                        <form>
+                            <div class="column-1">
+                                <label for="quantity" class="productDetail">Quantity:</label>
+								<button class="sub" style="width: 20px;">-</button>
+                                <input type="text" id="quantity" name="quantity" value="0">
+								<button class="add" style="width: 20px;">+</button>
+								<br><br>
+                            </div>
+                            <div class="column-1">
+                                <button class="btn_addToCart" >ADD TO CART</button> 
+                            </div>
+                        </form>
+                        <br><br>
+                        <button type="button" class="collapsible">MORE DESCRIPTION</button>
+                        <div class="productDetail">
+                            <p>Quantity:24 Bottles</p>
+                            <p>Size: 500ml/Bottle</p>
+                            <p>Type: Beverage</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--Footer-->
+            <div class="footer">
+                <p>Address: 123 Rue ABC, Montreal, QC H8G 9X7
+                </p>
+            </div>
+
+        </section>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.display === "block") {
+  content.style.display = "none";
+} else {
+  content.style.display = "block";
+}
+});
+}
+
+var quantity = document.getElementById('quantity')
+var addQ = document.getElementsByClassName('add')
+var subQ = document.getElementsByClassName('sub')
+quantity.value=0;
+if(localStorage.Quantity2){
+	quantity.value = localStorage.getItem('Quantity2');
+}else{
+	localStorage.setItem('Quantity2',0);  //Temporary storage
+}
+
+addQ[0].addEventListener("click",function(){
+	localStorage.Quantity2++;
+	quantity.value = localStorage.getItem('Quantity2');
+})
+subQ[0].addEventListener("click",function(){
+	localStorage.Quantity2--;
+	quantity.value = localStorage.getItem('Quantity2');
+})
+
+</script>
+</body>
+
+
+</html>

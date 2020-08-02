@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <Title>
+        Shopping Cart
+    </Title>
+    <link rel="stylesheet" href="p4.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="P4.js"></script>
+
+</head>
+
+<!-------------------------------------------------
+    Container: contains Header, content, footer
+--------------------------------------------------->
+
+<div id="container">
+
+    <body>
+        <!--Banner-->
+        <div class="header">
+            <br>
+            <h1>WELCOME TO</h1>
+            <h2>
+                <I>Daily Fresh</I>
+            </h2>
+        </div>
+        <!-------------------------------------------------
+            Navigation Bar
+        --------------------------------------------------->
+
+        <div class="navbar">
+            <a href="Index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Aisle
+                <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content">
+                    <a href="P2_Snacks.html">Snack</a>
+                    <a href="P2_Beverage.html">Beverage</a>
+                    <a href="P2_Vege.html">Vegetable</a>
+                    <a href="P2_meat.html">Meat</a>
+                    <a href="P2_organic_groceries.html">Organic groceries</a>
+                </div>
+            </div>
+            <a href="P5_Sign_in.html">Sign in</a>
+            <a href="P4.html">My Cart</a>
+            <div class="dropdown">
+                <button class="dropbtn">Back Store
+                <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content">
+                    <a href="P9.html">User</a>
+                    <a href="P7.html">Product</a>
+                    <a href="P11_order_list.html">Order List</a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-------------------------------------------------
+            Main content section
+        --------------------------------------------------->
+        <section class="main">
+            <div class="row">
+
+                <div class="col-1 col-t-1 col-p-1">
+                    <!-------------------------------------------------
+                 Shopping Cart List
+                     ------------------------------------------------->
+                    <div class="shopping-cart">
+                        <br>
+                        <h2>Shopping Cart</h2>
+                        <form name="ShoppingList">
+
+                            <table id="table-shopping-cart">
+                                <tr>
+                                    <th>Product Name</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Subtotal</th>
+                                    <th>Delete</th>
+                                </tr>
+                                <tr class="cartRows">
+                                    <td class="product-name">COCA-COLA</td>
+                                    <td class="product-price">$6.29</td>
+                                    <td>
+                                        <input type="button" class="btn-change COLAsub" value="-">
+                                        <span class="qtn-addToCart-COLA">0</span>
+                                        <input type="button" class="btn-change COLAadd" value="+">
+                                    </td>
+                                    <td class="product-subtotal-COLA">$0</td>
+                                    <td>
+                                        <input type="button" class="btn-delete" value="Delete" onclick="deleteItem(this,0)">
+                                    </td>
+
+                                </tr>
+                                <tr class="cartRows">
+                                    <td class="product-name">Ginger Ale</td>
+                                    <td class="product-price">$6.99</td>
+                                    <td><input type="button" class="btn-change ALEsub" value="-">
+                                        <span class="qtn-addToCart-Ale">4</span>
+                                        <input type="button" class="btn-change ALEadd" value="+">
+                                    </td>
+                                    <td class="product-subtotal-Ale">
+                                        $27.96
+                                    </td>
+                                    <td>
+                                        <input type="button" class="btn-delete" value="Delete" onclick="deleteItem(this,1)">
+                                    </td>
+
+                                </tr>
+                                <tr class="cartRows">
+                                    <td class="product-name">ESKA Water</td>
+                                    <td class="product-price">$5.29</td>
+                                    <td><input type="button" class="btn-change Wateradd" value="-">
+                                        <span class="qtn-addToCart-Water">1</span>
+                                        <input type="button" class="btn-change Watersub" value="+">
+                                    </td>
+                                    <td class="product-subtotal-Water">
+                                        $5.29
+                                    </td>
+                                    <td>
+                                        <input type="button" class="btn-delete" value="Delete" onclick="deleteItem(this,2)">
+                                    </td>
+
+                                </tr>
+                            </table>
+
+                        </form>
+
+
+                    </div>
+                </div>
+
+                <div class="col-2 col-t-2 col-p-2">
+
+
+                    <!-------------------------------------------------
+                  Shopping Cart Summary
+                  --------------------------------------------------->
+
+                    <div class="cart-summary">
+                        <div class="cart-summary-container">
+                            <h4>Cart Summary
+                                <span class="price" style="color:black">
+                        <i class="fa fa-shopping-cart"></i> <p class=shoppingCartTotalItems>5</p> 
+                        </span>
+                            </h4>
+                            <hr>
+                            <p><b>Subtotal*</b><span class="price SubtotalPrice" style="color:rgb(75, 73, 73)"><b>$40</b></span></p>
+                            <p>QST <span class="price QST" style="color:rgb(75, 73, 73)"><b>$2.56</b></span></p>
+                            <p>GST <span class="price GST" style="color:rgb(75, 73, 73)"><b>$3.88</b></span></p>
+                            <p><b>Total* </b><span class="price Totalprice" style="color:black"><b>$30</b></span></p>
+                            <hr>
+                            <p><b>Estimated Total</b> <span class="price EsTotal" style="color:black"><b>$30</b></span></p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="continue-shopping">
+                <button onclick="location.href='Index.html';" class="btn-continueShopping">Continue Shopping</button>
+            </div>
+
+        </section>
+        <!-------------------------------------------------
+            Footer
+        --------------------------------------------------->
+        <footer>
+            <div class="footer">
+                <p>Address: 123 Rue ABC, Montreal, QC H8G 9X7
+                </p>
+            </div>
+        </footer>
+    </body>
+</div>
+
+<script type="text/javascript">
+    var shoppingCartTotalItems = document.getElementsByClassName('shoppingCartTotalItems');
+    shoppingCartTotalItems[0].innerHTML = parseInt(localStorage.Quantity) + parseInt(localStorage.Quantity1) + parseInt(localStorage.Quantity2);
+
+    var SubtotalPrice = document.getElementsByClassName('SubtotalPrice');
+    var Totalprice = document.getElementsByClassName('Totalprice');
+    var QST = document.getElementsByClassName('QST');
+    var GST = document.getElementsByClassName('GST');
+    var EsTotal = document.getElementsByClassName('EsTotal');
+
+    if (!localStorage.Quantity) {
+        localStorage.setItem('Quantity', 0);
+    }
+    if (!localStorage.Quantity1) {
+        localStorage.setItem('Quantity1', 0);
+    }
+    if (!localStorage.Quantity2) {
+        localStorage.setItem('Quantity2', 0);
+    }
+
+
+    function refresh() { //Encapsulates a function that recalculates all data
+        shoppingCartTotalItems[0].innerHTML = parseInt(localStorage.Quantity) + parseInt(localStorage.Quantity1) + parseInt(localStorage.Quantity2);
+        SubtotalPrice[0].innerHTML = '$' + (parseFloat(localStorage.Quantity) * 6.29 + parseFloat(localStorage.Quantity1) * 6.99 + parseFloat(localStorage.Quantity2) * 5.29).toFixed(2);
+        QST[0].innerHTML = '$' + (parseFloat(SubtotalPrice[0].innerHTML.substring(1)) * 0.0975).toFixed(2);
+        GST[0].innerHTML = '$' + (parseFloat(SubtotalPrice[0].innerHTML.substring(1)) * 0.05).toFixed(2);
+        Totalprice[0].innerHTML = '$' + (parseFloat(SubtotalPrice[0].innerHTML.substring(1)) + parseFloat(GST[0].innerHTML.substring(1)) + parseFloat(QST[0].innerHTML.substring(1))).toFixed(2);
+        EsTotal[0].innerHTML = Totalprice[0].innerHTML;
+    }
+    if (localStorage.Quantity && localStorage.Quantity1 && localStorage.Quantity2) {
+        refresh();
+    }
+
+    var COLA = document.getElementsByClassName('qtn-addToCart-COLA');
+    COLA[0].innerHTML = localStorage.Quantity;
+
+    var COLAprice = document.getElementsByClassName('product-subtotal-COLA');
+    COLAprice[0].innerHTML = '$' + (localStorage.Quantity * 6.29).toFixed(2);
+
+    var COLAadd = document.getElementsByClassName('COLAadd');
+    var COLAsub = document.getElementsByClassName('COLAsub');
+    COLAadd[0].addEventListener("click", function() {
+        localStorage.Quantity++;
+        COLA[0].innerHTML = localStorage.Quantity;
+        COLAprice[0].innerHTML = '$' + (localStorage.Quantity * 6.29).toFixed(2);
+        shoppingCartTotalItems[0].innerHTML = parseInt(localStorage.Quantity) + parseInt(localStorage.Quantity1) + parseInt(localStorage.Quantity2);
+
+
+        refresh();
+    })
+    COLAsub[0].addEventListener("click", function() {
+        localStorage.Quantity--;
+        COLA[0].innerHTML = localStorage.Quantity;
+        COLAprice[0].innerHTML = '$' + (localStorage.Quantity * 6.29).toFixed(2);
+        shoppingCartTotalItems[0].innerHTML = parseInt(localStorage.Quantity) + parseInt(localStorage.Quantity1) + parseInt(localStorage.Quantity2);
+
+        refresh();
+    })
+
+    var ALE = document.getElementsByClassName('qtn-addToCart-Ale');
+    ALE[0].innerHTML = localStorage.Quantity1;
+
+    var ALEprice = document.getElementsByClassName('product-subtotal-Ale');
+    ALEprice[0].innerHTML = '$' + (localStorage.Quantity1 * 6.99).toFixed(2);
+
+    var ALEadd = document.getElementsByClassName('ALEadd');
+    var ALEsub = document.getElementsByClassName('ALEsub');
+    ALEadd[0].addEventListener("click", function() {
+        localStorage.Quantity1++;
+        ALE[0].innerHTML = localStorage.Quantity1;
+        ALEprice[0].innerHTML = '$' + (localStorage.Quantity1 * 6.99).toFixed(2);
+        shoppingCartTotalItems[0].innerHTML = parseInt(localStorage.Quantity) + parseInt(localStorage.Quantity1) + parseInt(localStorage.Quantity2);
+
+        refresh();
+    })
+    ALEsub[0].addEventListener("click", function() {
+        localStorage.Quantity1--;
+        ALE[0].innerHTML = localStorage.Quantity1;
+        ALEprice[0].innerHTML = '$' + (localStorage.Quantity1 * 6.99).toFixed(2);
+        shoppingCartTotalItems[0].innerHTML = parseInt(localStorage.Quantity) + parseInt(localStorage.Quantity1) + parseInt(localStorage.Quantity2);
+
+        refresh();
+    })
+
+    var WATER = document.getElementsByClassName('qtn-addToCart-Water');
+    WATER[0].innerHTML = localStorage.Quantity2;
+
+    var WATERprice = document.getElementsByClassName('product-subtotal-Water');
+    WATERprice[0].innerHTML = '$' + (localStorage.Quantity2 * 5.29).toFixed(2);
+
+    var Wateradd = document.getElementsByClassName('Wateradd');
+    var Watersub = document.getElementsByClassName('Watersub');
+    Watersub[0].addEventListener("click", function() {
+        localStorage.Quantity2++;
+        WATER[0].innerHTML = localStorage.Quantity2;
+        WATERprice[0].innerHTML = '$' + (localStorage.Quantity2 * 5.29).toFixed(2);
+        shoppingCartTotalItems[0].innerHTML = parseInt(localStorage.Quantity) + parseInt(localStorage.Quantity1) + parseInt(localStorage.Quantity2);
+
+        refresh();
+    })
+    Wateradd[0].addEventListener("click", function() {
+        localStorage.Quantity2--;
+        WATER[0].innerHTML = localStorage.Quantity2;
+        WATERprice[0].innerHTML = '$' + (localStorage.Quantity2 * 5.29).toFixed(2);
+        shoppingCartTotalItems[0].innerHTML = parseInt(localStorage.Quantity) + parseInt(localStorage.Quantity1) + parseInt(localStorage.Quantity2);
+
+        refresh();
+    })
+
+    console.log(localStorage)
+
+
+    /*------Remove Button-------*/
+    var btn_productDelete = document.getElementsByClassName("btn-delete");
+    console.log(btn_productDelete);
+
+    function deleteItem(r, x) {
+        var i = r.parentNode.parentNode.rowIndex;
+        document.getElementById("table-shopping-cart").deleteRow(i);
+
+        if (x == 0) {
+            localStorage.Quantity = 0;
+            refresh();
+        } else if (x == 1) {
+            localStorage.Quantity1 = 0;
+            refresh();
+        } else {
+            localStorage.Quantity2 = 0;
+            refresh();
+        }
+
+    }
+</script>
+
+</html>
