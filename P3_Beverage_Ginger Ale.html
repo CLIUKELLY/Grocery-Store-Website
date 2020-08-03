@@ -140,6 +140,7 @@
     var quantity = document.getElementById('quantity')
     var addQ = document.getElementsByClassName('add')
     var subQ = document.getElementsByClassName('sub')
+    quantity.value = 0;
     if (localStorage.Quantity1) {
         quantity.value = localStorage.getItem('Quantity1');
     } else {
