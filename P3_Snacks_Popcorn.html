@@ -1,0 +1,110 @@
+<html>
+</head>
+	<Title>
+		Popcorn | Daily Fresh
+    </Title>
+
+    <link rel="stylesheet" href="P3_Snacks.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<div id="container">
+<body>
+        <!--Banner-->
+        <div class="header">
+            <h1>WELCOME TO</h1>
+            <h2><i>Daily Fresh</i></h2>
+        </div>
+
+        <!--Navigation Bar-->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Aisle
+                <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content">
+                    <a href="P2_Snacks.html">Snack</a>
+                    <a href="P2_Beverage.html">Beverage</a>
+                    <a href="P2_Vege.html">Vegetable</a>
+                    <a href="P2_meat.html">Meat</a>
+                    <a href="P2_organic_groceries.html">Organic groceries</a>
+                </div>
+            </div>
+            <a href="P5_Sign_in.html">Sign in</a>
+            <a href="P4.html">My Cart</a>
+            <div class="dropdown">
+                <button class="dropbtn">Back Store
+                <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content">
+                    <a href="P9.html">User</a>
+                    <a href="P7.html">Product</a>
+                    <a href="P11.html">Order</a>
+                </div>
+            </div>
+        </div>
+        <div class="path">
+            <br>&nbsp;&nbsp;<a href="index.html">Home</a>&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;
+            Aisle&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;<a href="P2_Snacks.html">Snacks</a>&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;Popcorn
+        </div>
+
+    <br/>
+    <br/>
+    <br/>
+   
+    <!--popcorn-->
+    <div class="col-3 col-s-3 center">
+        <img src="image_product/popcorn.PNG"  alt="popcorn" width="200" height="230">
+    </div>
+    <div class="col-3 col-s-12">
+        <p>
+            <ul>
+                <li>
+                    <h1 id="popcorn">Popcorn</h1>
+                </li>
+                <li>
+                    <p>$3.99</p>
+                </li>
+                <li>
+                    <h4>Ingredients:</h4>
+                    <p>corn kernel, salt, butter and oil.</p>
+                </li>
+                <li>
+                    <h4>Weight:</h4>
+                    <p>454g</p>
+                </li>
+                <li>
+                    <button onclick="info()" class="button">More Description</button>
+                    <div class="breakWd"><p id="info"></p></div>
+                </li>
+                <li>
+                    <form action="P4.html">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" size="2" min="1" max="99" oninput="calPrice(this.value)" onchange="calPrice(this.value)">
+                        &nbsp&nbsp<label id="price">0</label><label>CAD &nbsp&nbsp</label>
+                        <button type="submit" class="button">Add to Cart</button>
+                    </form>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </li>
+            </ul>
+        </p>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>    
+        <!--Footer-->
+        <div class="footer">
+            <p>Address: 123 Rue ABC, Montreal, QC H8G 9X7</p>
+        </div>
+    <script src="P3_Snacks_Popcorn.js"></script>
+
+</body>
+</div>
+</html>

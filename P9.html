@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title>
+        Back Store User List | Daily Fresh
+    </Title>
+    <link rel="stylesheet" href="P9.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function accdelete(){
+            var txt;
+            var r = confirm("Are you sure to delete this account?");
+            if (r == true) {
+                txt = "The customer account HAS BEEN deleted!";
+            } else {
+                txt = "The customer account has NOT been deleted!";
+            }
+            alert(txt);
+        }
+    </script>
+</head>
+
+<div id="container">
+
+
+
+<body>
+        <div class="header">
+            <h1>WELCOME TO</h1>
+            <h2><i>Daily Fresh Back Store</i></h2>
+        </div>
+        
+        <!--Navigation Bar-->
+
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Aisle
+                <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content">
+                    <a href="P2_Snacks.html">Snack</a>
+                    <a href="P2_Beverage.html">Beverage</a>
+                    <a href="P2_Vege.html">Vegetable</a>
+                    <a href="P2_meat.html">Meat</a>
+                    <a href="P2_organic_groceries.html">Organic groceries</a>
+                </div>
+            </div>
+            <a href="P5_Sign_in.html">Sign in</a>
+            <a href="P4.html">My Cart</a>
+            <div class="dropdown">
+                <button class="dropbtn">Back Store
+                <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content">
+                    <a href="P9.html">User</a>
+                    <a href="P7.html">Product</a>
+                    <a href="P11.html">Order</a>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="path">
+            <br><a>&nbsp;&nbsp;Home&nbsp;&nbsp;</a>
+            <a> &gt;&gt;&nbsp;&nbsp;Back Store&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;User List </a>
+
+        </div>
+<div class="center">
+    <h2><br/>User List</h2>
+    <form action="P10.html" method="get">
+        <label for="user"><br/>Please input a user name or choose one using drop-down menu: </label>
+        <input list="users" name="user" id="user" autocomplete="on">
+        <datalist id="users">
+          <option value="Jerry Smith">
+          <option value="Alina Green">
+          <option value="Marry Brown">
+          <option value="Joe Jones">
+          <option value="Sara Williams">
+        </datalist>
+        <input class="button" type="submit" value="Add">
+        <input class="button" type="submit" value="Edit">
+        <button class="button" type="button" onclick="accdelete()">Delete</button>
+      </form>
+      
+</div>
+        <!-------------------------------------------------
+            Footer
+        --------------------------------------------------->
+        <footer>
+            <div class="footer">
+                <p>Address: 123 Rue ABC, Montreal, QC H8G 9X7
+                </p>
+            </div>
+        </footer>
+      
+</body>
+</div>
+</html>
