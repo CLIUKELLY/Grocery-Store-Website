@@ -27,8 +27,8 @@
          $element->appendChild($text);
      }
  }
- $dom->save('products.xml');
- if ($dom->save('products.xml')) {
+ $dom->save('cartProducts.xml');
+ if ($dom->save('cartProducts.xml')) {
 	 echo 0;
  }
 
