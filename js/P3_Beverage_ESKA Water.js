@@ -63,7 +63,7 @@ document.getElementsByClassName('btn_addToCart')[0].onclick = function() {
     console.log(cart);
     let name = document.getElementsByClassName('productName')[0].innerHTML;
     let type = document.getElementsByClassName('type')[0].innerHTML;
-    let price = document.getElementsByClassName('money')[0].innerText;
+    let price = document.getElementsByClassName('productPrice')[0].innerText;
     let packQuantity = document.getElementsByClassName('pack')[0].innerHTML;
     let size = document.getElementsByClassName('size')[0].innerHTML;
     let description = document.getElementsByClassName('description')[0].innerHTML;

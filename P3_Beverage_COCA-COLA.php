@@ -79,7 +79,7 @@
                     <div class="column">
                         <div class="productName">COCA-COLA</div>
                         <div class="price">
-							<div class="price-text">$<span class="money">6.29</span></div>/ <b>EA</b></div><br><br>
+							<div class="price-text">$<span class="productPrice">6.29</span></div>/ <b>EA</b></div><br><br>
 
                         <!-- <form action="adminCart.php" method="get"> -->
                             <div class="column-1">
