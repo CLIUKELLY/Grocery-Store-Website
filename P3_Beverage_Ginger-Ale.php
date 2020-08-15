@@ -120,8 +120,7 @@
 
         </section>
 </div>
-
-
+<script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/P3_Beverage_Ginger Ale.js"></script>
 </body>
 

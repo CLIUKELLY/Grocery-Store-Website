@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf8"?>
+<store>
+  <product>
+    <productName>COCA-COLA</productName>
+    <type>Beverage</type>
+    <price>6.29</price>
+    <packQuantity>12 Cans</packQuantity>
+    <size>355ml/Can</size>
+    <description>Enjoy the refreshing taste of Coca-Cola with meals, on the go, or to share. Serve ice cold for maximum refreshment.</description>
+    <quantity>2</quantity>
+    <totalPrice>0</totalPrice>
+  </product>
+</store>
