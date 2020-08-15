@@ -1,4 +1,25 @@
 <?php
+// Start the session
+session_start();
+//take items out of PHP SESSION
+$j=0;
+foreach($_SESSION as $item){
+    //echo "<hr>";
+    $cartPHP[$j]['productName'] = $_SESSION['product'.$j]['productName'];
+    $cartPHP[$j]['quantity'] = $_SESSION['product'.$j]['quantity'];
+    $cartPHP[$j]['price'] = $_SESSION['product'.$j]['price'];
+    //echo $cartPHP[$j]['productName'];
+    //echo $_SESSION['product'.$j]['quantity'];
+    //echo "  ";
+    //echo $_SESSION['product'.$j]['price'];
+    //echo "  ";
+    $j++;
+}
+//echo "<hr>";
+//print_r($_SESSION);
+//print_r($cartPHP);
+//echo "<hr>";
+
 
 ?>
     <!DOCTYPE html>
@@ -46,7 +67,7 @@
                     </div>
                 </div>
                 <a href="P5_Sign_in.html">Sign in</a>
-                <a href="P4.html">My Cart</a>
+                <a href="P4.php">My Cart</a>
                 <div class="dropdown">
                     <button class="dropbtn">Back Store
                 <i class="fa fa-caret-down"></i>
@@ -152,6 +173,16 @@
         </body>
     </div>
 
+    
+    <script type="text/javascript" id="cartSESSION">
+        <?php
+            $php_array = $cartPHP;
+            $js_array = json_encode($php_array);
+            echo "var javascript_array = ".$js_array.";\n";
+        ?>
+        //console.log(javascript_array);
+        
+    </script>
     <script type="text/javascript" src="js/P4.js"></script>
 
     </html>

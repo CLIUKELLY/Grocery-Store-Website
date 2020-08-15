@@ -1,4 +1,7 @@
-<?php ?>
+<?php 
+// Start the session
+session_start();
+?>
 <html lang="en">
 <head>
     <Title>
@@ -39,7 +42,7 @@
                 </div>
             </div>
             <a href="P5_Sign_in.html">Sign in</a>
-            <a href="P4.html">My Cart</a>
+            <a href="P4.php">My Cart</a>
             <div class="dropdown">
                 <button class="dropbtn">Back Store
                 <i class="fa fa-caret-down"></i>

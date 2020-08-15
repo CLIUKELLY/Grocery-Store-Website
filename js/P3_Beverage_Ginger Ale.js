@@ -81,10 +81,23 @@ document.getElementsByClassName('btn_addToCart')[0].onclick = function() {
     localStorage.setItem('cart', JSON.stringify(cart));
     let data = JSON.parse(localStorage.getItem('cart'));
 
-    window.location.href = 'P4.html';
-
-
-
-
+    $.ajax({
+        //url: proBaseUrl +'adminCart.php',
+        //url: 'PHPtest.php',
+        url: 'adminCart.php',
+        type: 'POST',
+        data: {
+            data: JSON.stringify(data)
+        },
+        success: (res) => {
+            if (res == 0) {
+                console.log(res);
+                window.location.href = 'P4.php';
+            } else {
+                // alert('Request was aborted');
+                window.location.href = 'P4.php';
+            }
+        }
+    })
 
 }
