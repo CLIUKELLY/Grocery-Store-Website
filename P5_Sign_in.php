@@ -38,27 +38,27 @@ session_start();
 		return true;
       }
 	  if ( email.value == "jerry@gmail.com" && password.value == "11"){
-        window.location = "Index.html";
+        window.location = "index.html";
 		alert ("Welcome, Jerry");
 		return true;
       }
 	  if ( email.value == "alina@gmail.com" && password.value == "22"){
-        window.location = "Index.html";
+        window.location = "index.html";
 		alert ("Welcome, Alina");
 		return true;
       }
 	  if ( email.value == "marry@gmail.com" && password.value == "33"){
-        window.location = "Index.html";
+        window.location = "index.html";
 		alert ("Welcome, Marry");
 		return true;
       }
 	  if ( email.value == "joe@gmail.com" && password.value == "44"){
-        window.location = "Index.html";
+        window.location = "index.html";
 		alert ("Welcome, Joe");
 		return true;
       }
 	  if ( email.value == "sara@gmail.com" && password.value == "55"){
-        window.location = "Index.html";
+        window.location = "index.html";
 		alert ("Welcome, Sara");
 		return true;
       }

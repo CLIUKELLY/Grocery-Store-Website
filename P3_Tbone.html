@@ -58,7 +58,7 @@
 
         <div class="navbar">
 
-            <a href="Index.html">Home</a>
+            <a href="index.html">Home</a>
 
             <div class="dropdown">
 
@@ -165,8 +165,9 @@
                         <div class="productPrice">&nbsp;&nbsp;&nbsp;$14.99 / lb</div>
 
                         <div class="productDetail">
-						
-						<p><br/>Cut from Canada AA or higher.<br/><br/>Size: 0.42kg/tray (in average)<br/><br/></p></div>
+
+                            <p><br/>Cut from Canada AA or higher.<br/><br/>Size: 0.42kg/tray (in average)<br/><br/></p>
+                        </div>
 
                         <form action="P3_Tbone.php" method="POST">
 
@@ -174,9 +175,9 @@
 
                             <input type="number" id="quantity" name="quantity" value="0"><br><br>
 
-                            <input type = "button" value = "In Total" style = "padding-left:10px;padding-right:10px;" onclick = "computeCost();" />
-							
-							<input type = "text" size = "8" id = "cost" onfocus = "this.blur();" /><br><br>
+                            <input type="button" value="In Total" style="padding-left:10px;padding-right:10px;" onclick="computeCost();" />
+
+                            <input type="text" size="8" id="cost" onfocus="this.blur();" /><br><br>
 
                             <div class="column">
 
@@ -185,43 +186,44 @@
                             </div><br/><br/><br/><br/>
 
                         </form>
-							
-						<button onclick="clickshow()" style="padding-left:10px; padding-right:10px;padding-top:5px;padding-bottom:5px;">DETAILED DESCRIPTION</button><br/><br/>
 
-						<div id="description" style="display:none;" >
-							
-						The T-Bone is cut from the short loin, and has two different steaks attached to the bone. This one is called tenderloin.
-						
-						</div>
-						
-						<script type = "text/javascript">
-						function computeCost() {
-						var quantity = document.getElementById("quantity").value;
-						document.getElementById("cost").value = quantity * 14.99;
-						}
-						function cart(){
-	                    var quantity = document.getElementById("quantity").value;
-                        if ( quantity != "0" ){
-                          window.location = "P4.html";
-						  alert ("Add to cart successfully");
-						  return true;
-                        }
-						else{
-						  alert ("Please select quantity");
-						  return false;
-                        }
-						}
-						function clickshow() {
-                        var x = document.getElementById("description");
-                        if (x.style.display === "none") {
-							x.style.display = "block";
-						} else {
-							x.style.display = "none";
-						}
-						}
-	                    </script>
+                        <button onclick="clickshow()" style="padding-left:10px; padding-right:10px;padding-top:5px;padding-bottom:5px;">DETAILED DESCRIPTION</button><br/><br/>
 
-                        
+                        <div id="description" style="display:none;">
+
+                            The T-Bone is cut from the short loin, and has two different steaks attached to the bone. This one is called tenderloin.
+
+                        </div>
+
+                        <script type="text/javascript">
+                            function computeCost() {
+                                var quantity = document.getElementById("quantity").value;
+                                document.getElementById("cost").value = quantity * 14.99;
+                            }
+
+                            function cart() {
+                                var quantity = document.getElementById("quantity").value;
+                                if (quantity != "0") {
+                                    window.location = "P4.html";
+                                    alert("Add to cart successfully");
+                                    return true;
+                                } else {
+                                    alert("Please select quantity");
+                                    return false;
+                                }
+                            }
+
+                            function clickshow() {
+                                var x = document.getElementById("description");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+
 
                     </div>
 

@@ -58,7 +58,7 @@
 
         <div class="navbar">
 
-            <a href="Index.html">Home</a>
+            <a href="index.html">Home</a>
 
             <div class="dropdown">
 
@@ -165,8 +165,9 @@
                         <div class="productPrice">&nbsp;&nbsp;&nbsp;$4.49 / lb</div>
 
                         <div class="productDetail">
-						
-						<p><br/>Cut from Canada AA or higher.<br/><br/>Size: 0.44kg/tray (in average)<br/><br/></p></div>
+
+                            <p><br/>Cut from Canada AA or higher.<br/><br/>Size: 0.44kg/tray (in average)<br/><br/></p>
+                        </div>
 
                         <form action="P3_GroundBeef.php" method="POST">
 
@@ -174,9 +175,9 @@
 
                             <input type="number" id="quantity" name="quantity" value="0" /><br><br>
 
-                            <input type = "button" value = "In Total" style = "padding-left:10px;padding-right:10px;" onclick="computeCost()" />
-							
-							<input type = "text" size = "8" id = "cost" onfocus = "this.blur();" /><br><br>
+                            <input type="button" value="In Total" style="padding-left:10px;padding-right:10px;" onclick="computeCost()" />
+
+                            <input type="text" size="8" id="cost" onfocus="this.blur();" /><br><br>
 
                             <div class="column">
 
@@ -185,61 +186,63 @@
                             </div><br/><br/><br/><br/>
 
                         </form>
-						
-						<button onclick="clickshow()" style="padding-left:10px; padding-right:10px;padding-top:5px;padding-bottom:5px;">DETAILED DESCRIPTION</button><br/><br/>
 
-						<div id="description" style="display:none;" >
-							
-						Ground meat is finely chopped, boneless, and skinless with varying amounts of fat indicated by the name regular (no more than 30% fat), medium (no more than 23% fat), lean (no more than 17% fat), or extra lean (no more than 10% fat). Use your favourite ground meat to make burgers and meatballs, or add to chili and pasta sauce.
-						
-						</div>
-						
-						<script type = "text/javascript">
-						//window.onload = function(){
-						//if(window.sessionStorage){
-						//var quantity = window.sessionStorage.getItem("quantity");
-						//var cost = window.sessionStorage.getItem("cost");
-						  //if(quantity != "" || quantity != null){
-						    //document.getElementById("quantity").value = quantity;
-							//}
-							//if(cost != "" || cost != null){
-						    //document.getElementById("cost").value = cost;
-							//}
-						//}}
-						function computeCost() {
-						 //if(window.sessionStorage){
-						 //var quantity = document.getElementById("quantity").value;
-						 //var cost = document.getElementById("cost").value;
-						 //cost = quantity* 4.49;
-						 //window.sessionStorage.setItem("quantity", quantity);
-						 //window.sessionStorage.setItem("cost", cost);
-						 //}}
-						var quantity = document.getElementById("quantity").value;
-                        document.getElementById("cost").value = quantity * 4.49;
-						}
-						function cart(){
-	                    var quantity = document.getElementById("quantity").value;
-                        if ( quantity != "0" ){
-                          window.location = "P4.html";
-						  alert ("Add to cart successfully");
-						  return true;
-                        }
-						else{
-						  alert ("Please select quantity");
-						  return false;
-                        }
-						}
-						function clickshow() {
-                        var x = document.getElementById("description");
-                        if (x.style.display === "none") {
-							x.style.display = "block";
-						} else {
-							x.style.display = "none";
-						}
-						}
-	                    </script>
+                        <button onclick="clickshow()" style="padding-left:10px; padding-right:10px;padding-top:5px;padding-bottom:5px;">DETAILED DESCRIPTION</button><br/><br/>
 
-                   
+                        <div id="description" style="display:none;">
+
+                            Ground meat is finely chopped, boneless, and skinless with varying amounts of fat indicated by the name regular (no more than 30% fat), medium (no more than 23% fat), lean (no more than 17% fat), or extra lean (no more than 10% fat). Use your favourite
+                            ground meat to make burgers and meatballs, or add to chili and pasta sauce.
+
+                        </div>
+
+                        <script type="text/javascript">
+                            //window.onload = function(){
+                            //if(window.sessionStorage){
+                            //var quantity = window.sessionStorage.getItem("quantity");
+                            //var cost = window.sessionStorage.getItem("cost");
+                            //if(quantity != "" || quantity != null){
+                            //document.getElementById("quantity").value = quantity;
+                            //}
+                            //if(cost != "" || cost != null){
+                            //document.getElementById("cost").value = cost;
+                            //}
+                            //}}
+                            function computeCost() {
+                                //if(window.sessionStorage){
+                                //var quantity = document.getElementById("quantity").value;
+                                //var cost = document.getElementById("cost").value;
+                                //cost = quantity* 4.49;
+                                //window.sessionStorage.setItem("quantity", quantity);
+                                //window.sessionStorage.setItem("cost", cost);
+                                //}}
+                                var quantity = document.getElementById("quantity").value;
+                                document.getElementById("cost").value = quantity * 4.49;
+                            }
+
+                            function cart() {
+                                var quantity = document.getElementById("quantity").value;
+                                if (quantity != "0") {
+                                    window.location = "P4.html";
+                                    alert("Add to cart successfully");
+                                    return true;
+                                } else {
+                                    alert("Please select quantity");
+                                    return false;
+                                }
+                            }
+
+                            function clickshow() {
+                                var x = document.getElementById("description");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+
 
                     </div>
 

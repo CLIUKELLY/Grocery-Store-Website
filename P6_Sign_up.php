@@ -48,7 +48,7 @@ session_start();
 		var consent = document.getElementById("consent");
         
       if (firstname != "" && lastname != "" && email != "" && p1 == p2 && consent.checked){
-	    window.location = "Index.html";
+	    window.location = "index.html";
         alert ("Create new account successfully");
 		return true;
       }

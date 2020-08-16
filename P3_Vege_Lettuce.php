@@ -24,7 +24,7 @@ session_start();
 
         <!--Navigation Bar-->
         <div class="navbar">
-            <a href="Index.html">Home</a>
+            <a href="index.html">Home</a>
             <div class="dropdown">
                 <button class="dropbtn">Aisle
                 <i class="fa fa-caret-down"></i>
@@ -53,7 +53,7 @@ session_start();
 
         </div>
         <div class="path">
-            <br><a href="Index.html">&nbsp;&nbsp;Home&nbsp;&nbsp;</a> 
+            <br><a href="index.html">&nbsp;&nbsp;Home&nbsp;&nbsp;</a> 
             <a> &gt;&gt;&nbsp;&nbsp;Aisle&nbsp;&nbsp;</a>
             <a href="P2_Vege.html">&gt;&gt;&nbsp;&nbsp;Vegetable&nbsp;&nbsp;</a>
             <a> &gt;&gt;&nbsp;&nbsp;Lettuce&nbsp;&nbsp;</a>

@@ -23,7 +23,7 @@ if ($numrows > 0)
 else
 {$sqlAddUser= "INSERT INTO users  (Email, Password)  VALUES ('".$email."', '".$password."')";
 $UserResults= mysql_query($sqlAddUser);
-{header ("location: Index.html");}
+{header ("location: index.html");}
 }
 }
 ?>

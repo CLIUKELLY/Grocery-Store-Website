@@ -16,7 +16,7 @@ if(isset($_POST['email']))
 	$allResults= mysql_query($sql);
 	$numrows= mysql_num_rows($allResults);
 	If ($numrows == 1)
-	{header ("location: Index.html");
+	{header ("location: index.html");
 	}
 	else
 	{header ("location: P5_Sign_in.html");}

@@ -15,63 +15,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="P3_meat.css">
-	
+
     <script type="text/javascript">
+        /*$(document).ready(function(){
 
-    /*$(document).ready(function(){
+              $.ajax({
+                type:'post',
+                url:'P3_meat_store_items.php',
+                data:{
+                  total_cart_items:"totalitems"
+                },
+                success:function(response) {
+                  document.getElementById("quantity").value=response;
+                }
+              });
 
-      $.ajax({
-        type:'post',
-        url:'P3_meat_store_items.php',
-        data:{
-          total_cart_items:"totalitems"
-        },
-        success:function(response) {
-          document.getElementById("quantity").value=response;
-        }
-      });
+            });
 
-    });
+            function cart(id)
+            {
+        	  var ele=document.getElementById(id);
+        	  var img_src=ele.getElementsByTagName("img")[0].src;
+        	  var name=document.getElementById("productName").value;
+        	  var price=document.getElementById("price").value;
+        	
+        	  $.ajax({
+                type:'post',
+                url:'P3_meat_store_items.php',
+                data:{
+                  item_src:img_src,
+                  item_name:name,
+                  item_price:price
+                },
+                success:function(response) {
+                  document.getElementById("quantity").value=response;
+                }
+              });
+        	
+            }
 
-    function cart(id)
-    {
-	  var ele=document.getElementById(id);
-	  var img_src=ele.getElementsByTagName("img")[0].src;
-	  var name=document.getElementById("productName").value;
-	  var price=document.getElementById("price").value;
-	
-	  $.ajax({
-        type:'post',
-        url:'P3_meat_store_items.php',
-        data:{
-          item_src:img_src,
-          item_name:name,
-          item_price:price
-        },
-        success:function(response) {
-          document.getElementById("quantity").value=response;
-        }
-      });
-	
-    }
+            function show_cart()
+            {
+              $.ajax({
+              type:'post',
+              url:'P3_meat_store_items.php',
+              data:{
+                showcart:"cart"
+              },
+              success:function(response) {
+                document.getElementById("mycart").innerHTML=response;
+                $("#mycart").slideToggle();
+              }
+             });
 
-    function show_cart()
-    {
-      $.ajax({
-      type:'post',
-      url:'P3_meat_store_items.php',
-      data:{
-        showcart:"cart"
-      },
-      success:function(response) {
-        document.getElementById("mycart").innerHTML=response;
-        $("#mycart").slideToggle();
-      }
-     });
-
-    }
-	
-</script>*/
+            }
+    </script>*/
 
 </head>
 
@@ -88,7 +86,7 @@
 
 
     <body>
-	<!--<p id="cart_button" onclick="show_cart();">
+        <!--<p id="cart_button" onclick="show_cart();">
     <img src="shopping-cart-icon.jpg">
     <input type="button" id="total_items" value="">
     </p>
@@ -122,7 +120,7 @@
 
         <div class="navbar">
 
-            <a href="Index.html">Home</a>
+            <a href="index.html">Home</a>
 
             <div class="dropdown">
 
@@ -229,9 +227,10 @@
                         <div class="price">&nbsp;&nbsp;&nbsp;$7.49 / ea</div>
 
                         <div class="productDetail">
-						
-						<p><br/>Manufacturer: President's Choice<br/><br/>Size: 500g<br/><br/></p></div>
-						
+
+                            <p><br/>Manufacturer: President's Choice<br/><br/>Size: 500g<br/><br/></p>
+                        </div>
+
 
                         <form action="P3_Bacon.php" method="POST">
 
@@ -239,56 +238,58 @@
 
                             <input type="number" id="quantity" name="quantity" value="0"><br><br>
 
-                            <input type = "button" value = "In Total" style = "padding-left:10px;padding-right:10px;" onclick = "computeCost();" />
-							
-							<input type = "text" size = "8" id = "cost" onfocus = "this.blur();" /><br><br>
+                            <input type="button" value="In Total" style="padding-left:10px;padding-right:10px;" onclick="computeCost();" />
+
+                            <input type="text" size="8" id="cost" onfocus="this.blur();" /><br><br>
 
                             <div class="column">
 
                                 <input type="submit" class="button" value="ADD TO CART" onclick="cart();">
 
                             </div><br/><br/><br/><br/>
-							
+
                         </form>
-						
-						<button onclick="clickshow()" style="padding-left:10px; padding-right:10px;padding-top:5px;padding-bottom:5px;">DETAILED DESCRIPTION</button><br/><br/>
 
-						<div id="description" style="display:none;" >
-							
-						With 50% less salt than regular PC Bacon, this product offers a simple way to reduce sodium intake without giving up one of your favourite foods. Naturally smoked and crackling with lip-smacking flavour, you can go further and round it out with other sodium-conscious options such as an unsalted omelette seasoned with fresh herbs.
-						
-						</div>
-						
-						
-						<script type = "text/javascript">
-						function computeCost(){
-						var quantity = document.getElementById("quantity").value;
-						document.getElementById("cost").value = quantity * 7.49;
-						//document.getElementById("cost").innerHTML = (localStorage.Quantity * 7.49).toFixed(2);
-						}
-						function cart(){
-	                    var quantity = document.getElementById("quantity").value;
-                        if ( quantity != "0" ){
-                          window.location = "P4.html";
-						  alert ("Add to cart successfully");
-						  return true;
-                        }
-						else{
-						  alert ("Please select quantity");
-						  return false;
-                        }
-						}
-						function clickshow() {
-                        var x = document.getElementById("description");
-                        if (x.style.display === "none") {
-							x.style.display = "block";
-						} else {
-							x.style.display = "none";
-						}
-						}
-	                    </script>
+                        <button onclick="clickshow()" style="padding-left:10px; padding-right:10px;padding-top:5px;padding-bottom:5px;">DETAILED DESCRIPTION</button><br/><br/>
 
-                        
+                        <div id="description" style="display:none;">
+
+                            With 50% less salt than regular PC Bacon, this product offers a simple way to reduce sodium intake without giving up one of your favourite foods. Naturally smoked and crackling with lip-smacking flavour, you can go further and round it out with other
+                            sodium-conscious options such as an unsalted omelette seasoned with fresh herbs.
+
+                        </div>
+
+
+                        <script type="text/javascript">
+                            function computeCost() {
+                                var quantity = document.getElementById("quantity").value;
+                                document.getElementById("cost").value = quantity * 7.49;
+                                //document.getElementById("cost").innerHTML = (localStorage.Quantity * 7.49).toFixed(2);
+                            }
+
+                            function cart() {
+                                var quantity = document.getElementById("quantity").value;
+                                if (quantity != "0") {
+                                    window.location = "P4.html";
+                                    alert("Add to cart successfully");
+                                    return true;
+                                } else {
+                                    alert("Please select quantity");
+                                    return false;
+                                }
+                            }
+
+                            function clickshow() {
+                                var x = document.getElementById("description");
+                                if (x.style.display === "none") {
+                                    x.style.display = "block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        </script>
+
+
 
                     </div>
 
