@@ -1,0 +1,9 @@
+                            <br>Product Number: 068826176002
+                            <br>$4.19 ea.
+                            <br>Organic product
+                            <br>
+                              <form action="buy.php?price=4.19&id='176002'&name='Bluecorn'" method="post">
+                                                          <p>Quantity: <input type="text" name="Quantity" /></p>
+                                                          <input type="submit" value="Add to shopping cart" />
+                                                        </form>
+
