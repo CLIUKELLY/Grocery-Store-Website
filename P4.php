@@ -75,8 +75,7 @@ foreach($_SESSION as $item){
                     <div class="dropdown-content">
                         <a href="P9.html">User</a>
                         <a href="P7.html">Product</a>
-                        <a href="P11_order_list.html">Order List</a>
-
+                        <a href="soen287-asg3-Tiejun/P11_order_list.php">Order List</a>
                     </div>
                 </div>
 
