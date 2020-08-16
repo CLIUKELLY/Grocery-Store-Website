@@ -183,6 +183,6 @@ foreach($_SESSION as $item){
         //console.log(javascript_array);
         
     </script>
-    <script type="text/javascript" src="js/P4.js"></script>
+    <script type="text/javascript" src="js_CL/P4.js"></script>
 
     </html>

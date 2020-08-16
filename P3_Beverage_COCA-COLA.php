@@ -123,8 +123,8 @@ session_start();
 
         </section>
 </div>
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/P3_Beverage_COCA-COLA.js"></script>
+<script src="js_CL/jquery-3.4.1.min.js"></script>
+<script src="js_CL/P3_Beverage_COCA-COLA.js"></script>
 </body>
 
 
