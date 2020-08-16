@@ -145,7 +145,8 @@ function calcTotal() {
     let Total = document.getElementById('Total');
     let QST = parseFloat(document.getElementById('QST').innerText);
     let GST = parseFloat(document.getElementById('GST').innerText);
-    let count = QST + GST;
+    let subtotal = parseFloat(document.getElementById('Subtotal').innerText);
+    let count = QST + GST + subtotal;
     Total.innerHTML = count.toFixed(2);
     return Total.innerHTML;
 }
