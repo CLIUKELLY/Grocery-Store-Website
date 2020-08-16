@@ -35,11 +35,11 @@ session_start();
                     <a href="P2_Beverage.html">Beverage</a>
                     <a href="P2_Vege.html">Vegetable</a>
                     <a href="P2_meat.html">Meat</a>
-                    <a href="P2_organic_groceries.html">Organic groceries</a>
+                    <a href="soen287-asg3-Tiejun/P2_organic_groceries.html">Organic groceries</a>
                 </div>
             </div>
             <a href="P5_Sign_in.html">Sign in</a>
-            <a href="P4.html">My Cart</a>
+            <a href="P4.php">My Cart</a>
             <div class="dropdown">
                 <button class="dropbtn">Back Store
                 <i class="fa fa-caret-down"></i>
@@ -47,7 +47,7 @@ session_start();
                 <div class="dropdown-content">
                     <a href="P9.html">User</a>
                     <a href="P7.html">Product</a>
-                    <a href="#">Order</a>
+                    <a href="soen287-asg3-Tiejun/P11_order_list.php">Order List</a>
 
                 </div>
             </div>
