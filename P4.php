@@ -1,6 +1,8 @@
 <?php
+
 // Start the session
 session_start();
+//session_destroy()
 //take items out of PHP SESSION
 $j=0;
 foreach($_SESSION as $item){
