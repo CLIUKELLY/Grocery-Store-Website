@@ -19,56 +19,56 @@
     <script type="text/javascript">
         /*$(document).ready(function(){
 
-              $.ajax({
-                type:'post',
-                url:'P3_meat_store_items.php',
-                data:{
-                  total_cart_items:"totalitems"
-                },
-                success:function(response) {
-                  document.getElementById("quantity").value=response;
-                }
-              });
+                      $.ajax({
+                        type:'post',
+                        url:'P3_meat_store_items.php',
+                        data:{
+                          total_cart_items:"totalitems"
+                        },
+                        success:function(response) {
+                          document.getElementById("quantity").value=response;
+                        }
+                      });
 
-            });
+                    });
 
-            function cart(id)
-            {
-        	  var ele=document.getElementById(id);
-        	  var img_src=ele.getElementsByTagName("img")[0].src;
-        	  var name=document.getElementById("productName").value;
-        	  var price=document.getElementById("price").value;
-        	
-        	  $.ajax({
-                type:'post',
-                url:'P3_meat_store_items.php',
-                data:{
-                  item_src:img_src,
-                  item_name:name,
-                  item_price:price
-                },
-                success:function(response) {
-                  document.getElementById("quantity").value=response;
-                }
-              });
-        	
-            }
+                    function cart(id)
+                    {
+                	  var ele=document.getElementById(id);
+                	  var img_src=ele.getElementsByTagName("img")[0].src;
+                	  var name=document.getElementById("productName").value;
+                	  var price=document.getElementById("price").value;
+                	
+                	  $.ajax({
+                        type:'post',
+                        url:'P3_meat_store_items.php',
+                        data:{
+                          item_src:img_src,
+                          item_name:name,
+                          item_price:price
+                        },
+                        success:function(response) {
+                          document.getElementById("quantity").value=response;
+                        }
+                      });
+                	
+                    }
 
-            function show_cart()
-            {
-              $.ajax({
-              type:'post',
-              url:'P3_meat_store_items.php',
-              data:{
-                showcart:"cart"
-              },
-              success:function(response) {
-                document.getElementById("mycart").innerHTML=response;
-                $("#mycart").slideToggle();
-              }
-             });
+                    function show_cart()
+                    {
+                      $.ajax({
+                      type:'post',
+                      url:'P3_meat_store_items.php',
+                      data:{
+                        showcart:"cart"
+                      },
+                      success:function(response) {
+                        document.getElementById("mycart").innerHTML=response;
+                        $("#mycart").slideToggle();
+                      }
+                     });
 
-            }
+                    }
     </script>*/
 
 </head>
@@ -148,7 +148,7 @@
 
             <a href="P5_Sign_in.html">Sign in</a>
 
-            <a href="P4.html">My Cart</a>
+            <a href="P4.php">My Cart</a>
 
             <div class="dropdown">
 
@@ -270,7 +270,7 @@
                             function cart() {
                                 var quantity = document.getElementById("quantity").value;
                                 if (quantity != "0") {
-                                    window.location = "P4.html";
+                                    window.location = "P4.php";
                                     alert("Add to cart successfully");
                                     return true;
                                 } else {

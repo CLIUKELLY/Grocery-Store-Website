@@ -178,7 +178,7 @@ session_start();
 						function cart(){
 	                    var quantity = document.getElementById("quantity").value;
                         if ( quantity != "0" ){
-                          window.location = "P4.html";
+                          window.location = "P4.php";
 						  alert ("Add to cart successfully");
 						  return true;
                         }
