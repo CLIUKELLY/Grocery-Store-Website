@@ -29,7 +29,7 @@ foreach($_SESSION as $item){
         <Title>
             Shopping Cart
         </Title>
-        <link rel="stylesheet" type="text/css" href="css_CL/P4.css">
+        <link rel="stylesheet" type="text/css" href="Chengyan_Liu_40024886/css_CL/P4.css">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
 
@@ -60,14 +60,14 @@ foreach($_SESSION as $item){
             </button>
                     <div class="dropdown-content">
                         <a href="P2_Snacks.html">Snack</a>
-                        <a href="P2_Beverage.html">Beverage</a>
+                        <a href="Chengyan_Liu_40024886/P2_Beverage.html">Beverage</a>
                         <a href="P2_Vege.html">Vegetable</a>
                         <a href="P2_meat.html">Meat</a>
                         <a href="P2_organic_groceries.html">Organic groceries</a>
                     </div>
                 </div>
                 <a href="P5_Sign_in.html">Sign in</a>
-                <a href="P4.php">My Cart</a>
+                <a href="Chengyan_Liu_40024886/P4.php">My Cart</a>
                 <div class="dropdown">
                     <button class="dropbtn">Back Store
                 <i class="fa fa-caret-down"></i>
@@ -183,6 +183,6 @@ foreach($_SESSION as $item){
         //console.log(javascript_array);
         
     </script>
-    <script type="text/javascript" src="js_CL/P4.js"></script>
+    <script type="text/javascript" src="Chengyan_Liu_40024886/js_CL/P4.js"></script>
 
     </html>

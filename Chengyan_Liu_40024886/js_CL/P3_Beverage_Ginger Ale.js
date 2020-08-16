@@ -21,36 +21,36 @@ var subQ = document.getElementsByClassName('sub')
 var value = document.getElementById('value')
 
 //Take data from local cache, if there is cache, there is data
-if (localStorage.Quantity2) {
-    quantity.value = localStorage.getItem('Quantity2');
-    value.innerHTML = (localStorage.Quantity2 * 6.29).toFixed(2);
+if (localStorage.Quantity1) {
+    quantity.value = localStorage.getItem('Quantity1');
+    value.innerHTML = (localStorage.Quantity1 * 6.99).toFixed(2);
 } else {
-    localStorage.setItem('Quantity2', 0); //Temporary storage
+    localStorage.setItem('Quantity1', 0); //Temporary storage
 }
 
 
 addQ[0].addEventListener("click", function() {
-    localStorage.Quantity2++;
+    localStorage.Quantity1++;
     calc();
 
 })
 subQ[0].addEventListener("click", function() {
-    if (localStorage.quantity2 == 0) {
+    if (localStorage.quantity1 == 0) {
         return;
     }
     if (quantity.value <= 0) {
         alert("It can't be less");
         return;
     }
-    localStorage.Quantity2--;
+    localStorage.Quantity1--;
     calc();
 })
 
 // Calculate the price
 function calc() {
-    quantity.value = localStorage.getItem('Quantity2');
+    quantity.value = localStorage.getItem('Quantity1');
     value.innerHTML = '';
-    value.innerHTML = (quantity.value * 6.29).toFixed(2);
+    value.innerHTML = (quantity.value * 6.99).toFixed(2);
 }
 
 // add cart
@@ -83,20 +83,19 @@ document.getElementsByClassName('btn_addToCart')[0].onclick = function() {
 
     $.ajax({
         //url: proBaseUrl +'adminCart.php',
-        url: 'adminCart.php',
         //url: 'PHPtest.php',
+        url: 'Chengyan_Liu_40024886/adminCart.php',
         type: 'POST',
         data: {
             data: JSON.stringify(data)
         },
-
         success: (res) => {
             if (res == 0) {
                 console.log(res);
-                window.location.href = 'P4.php';
+                window.location.href = 'Chengyan_Liu_40024886/P4.php';
             } else {
-                //alert('Request was aborted');
-                window.location.href = 'P4.php';
+                // alert('Request was aborted');
+                window.location.href = 'Chengyan_Liu_40024886/P4.php';
             }
         }
     })
