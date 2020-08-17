@@ -1,7 +1,6 @@
-<?xml version = "1.0"  encoding = "utf-8" ?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <?php
-        session_start();
  
         if(isset($_SESSION['username']) && isset($_SESSION['loginlogin'])){
             
@@ -62,7 +61,7 @@
                     <a href="P2_organic_groceries.html">Organic groceries</a>
                 </div>
             </div>
-                <a href="P5_Sign_in.php">Sign in</a>
+                <a href="P5_Sign_in.html">Sign in</a>
                 <a href="P4.html">My Cart</a>
             <div class="dropdown">
                 <button class="dropbtn">Back Store
