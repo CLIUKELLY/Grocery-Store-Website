@@ -55,31 +55,30 @@
             <a href="index.html">Home</a>
             <div class="dropdown">
                 <button class="dropbtn">Aisle
-                <i class="fa fa-caret-down"></i>
+                    <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
                     <a href="P2_Snacks.html">Snack</a>
                     <a href="P2_Beverage.html">Beverage</a>
                     <a href="P2_Vege.html">Vegetable</a>
                     <a href="P2_meat.html">Meat</a>
-                    <a href="soen287-asg3-Tiejun/P2_organic_groceries.html">Organic groceries</a>
+                    <a href="P2_organic_groceries.html">Organic groceries</a>
                 </div>
             </div>
                 <a href="P5_Sign_in.html">Sign in</a>
-                <a href="P4.php">My Cart</a>
+                <a href="P4.html">My Cart</a>
             <div class="dropdown">
                 <button class="dropbtn">Back Store
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                    <div class="dropdown-content">
-                        <a href="P9.html">User</a>
-                        <a href="P7.html">Product</a>
-                        <a href="soen287-asg3-Tiejun/P11_order_list.php">Order List</a>
+                <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content">
+                    <a href="P9.html">User</a>
+                    <a href="P7.html">Product</a>
+                    <a href="P11_order_list.html">Order</a>
 
-                    </div>
+                </div>
             </div>
-
-    </div>
+        </div>
         <div class="path">
             <br>&nbsp;&nbsp;Home&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;Back Store&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;
             <a href="P9.html">User List</a>&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;User Profile
