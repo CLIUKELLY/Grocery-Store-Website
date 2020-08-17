@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block>
+<Membership>
+	<cardNumber>1001</cardNumber>
+    <firstname>Jerff</firstname>
+    <lastname>Smitha</lastname>
+    <birth>1991-01-09</birth>
+    <gender>male</gender>
+    <address>1213 Rue Atwater</address>
+    <postcode>H3T 2U4</postcode>
+    <phone>514-555-5555</phone>
+    <email>jerrysmith@dailyfresh.com</email>
+</Membership>
+<Membership>
+	<cardNumber>1002</cardNumber>
+	<firstname>Alina</firstname>
+	<lastname>Green</lastname>
+	<birth>1992-02-02</birth>
+	<gender>female</gender>
+	<address>1313 Rue Berri</address>
+	<postcode>H1P 7E5</postcode>
+	<phone>514-999-6666</phone>
+	<email>alinagreen@dailyfresh.com</email>
+</Membership>
+<Membership>
+	<cardNumber>1003</cardNumber>
+	<firstname>Marry</firstname>
+	<lastname>Brown</lastname>
+	<birth>1993-03-03</birth>
+	<gender>female</gender>
+	<address>1414 Rue Bishop</address>
+	<postcode>H9K 4B1</postcode>
+	<phone>514-888-1234</phone>
+	<email>marrybrown@dailyfresh.com</email>
+</Membership>
+<Membership>
+        <cardNumber>1006</cardNumber>
+    <firstname>Jane</firstname>
+    <lastname>host</lastname>
+    <birth>2017-01-05</birth>
+    <gender>male</gender>
+    <address>2070 de maineuve</address>
+    <postcode>h3h2n4</postcode>
+    <phone>111-111-1111</phone>
+    <email>abcd@gmail.com</email>
+        </Membership>
+<Membership>
+        <cardNumber>1007</cardNumber>
+        <firstname>Joe</firstname>
+        <lastname>Jones</lastname>
+        <birth>2020-08-02</birth>
+        <gender>other</gender>
+        <address>1515 Rue Champlain</address>
+        <postcode>H3T2U</postcode>
+        <phone>514-555-5555</phone>
+        <email>abcd@gmail.com</email>
+        </Membership>
+        </block>
