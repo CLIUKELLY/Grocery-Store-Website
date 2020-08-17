@@ -1,7 +1,7 @@
+<?php session_start(); ?>
 <?xml version = "1.0"  encoding = "utf-8" ?>
 
 <!DOCTYPE html>
-<?php session_start(); ?>
 <html lang="en">
 
 <?php
