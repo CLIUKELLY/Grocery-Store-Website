@@ -1,5 +1,4 @@
 <?php session_start(); ?>
-<?xml version = "1.0"  encoding = "utf-8" ?>
 
 <!DOCTYPE html>
 <html lang="en">
