@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf8"?>
+<store>
+  <product>
+    <productName>ESKA Water</productName>
+    <type>Beverage</type>
+    <price>5.29</price>
+    <packQuantity>24 Bottles</packQuantity>
+    <size>500ml/Bottle</size>
+    <description>Eska natural spring water comes from St-Mathieu d'Harricana, Quebec.</description>
+    <quantity>9</quantity>
+    <totalPrice>0</totalPrice>
+  </product>
+</store>

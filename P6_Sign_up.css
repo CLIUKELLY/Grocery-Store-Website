@@ -1,0 +1,13 @@
+h2 {color:white;background:rgb(101, 177, 130);text-align:center;}
+form {padding-left:450px;padding-top:30px;}
+input {width:80%;height:40px;padding:12px 20px;margin:20px 0;box-sizing:border-box;font-size:15px;}
+select {width:80%;height:40px;padding:12px 20px;margin:20px 0;box-sizing:border-box;font-size:13px;}
+@media screen and (max-width: 420px) {
+/*-----for phone----*/
+form {height: 200px;}}
+@media screen and (min-width: 650px) {
+/*---for tablet-----*/
+form {width: 50%;display: block;}}
+@media screen and (min-width: 1024px) {
+/*----for Laptop---*/
+form {width: 33.33%;display: block;}}

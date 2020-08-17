@@ -1,0 +1,9 @@
+                            <br>Product Number: 074305101328
+                            <br>$8.97 ea.
+                            <br>Organic product
+                            <br>
+                            <form action="buy.php?price=8.97&id='101328'&name='Vinegar'" method="post">
+                              <p>Quantity: <input type="text" name="Quantity" /></p>
+                              <input type="submit" value="Add to shopping cart" />
+                            </form>
+

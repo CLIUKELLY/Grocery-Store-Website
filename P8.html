@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <Title>
+        Add a new product - Back Store Product List
+    </Title>
+    <link rel="stylesheet" href="P8.css">
+
+    <style>
+        #products {
+            color: black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        #products td,
+        #products th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        #products tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        #products tr:hover {
+            background-color: #ddd;
+        }
+        
+        #products th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: rgb(101, 177, 130);
+            color: white;
+        }
+    </style>
+
+</head>
+
+<!-------------------------------------------------
+    Container: contains Header, content, footer
+--------------------------------------------------->
+
+<body>
+    <div class="header">
+        <h1>WELCOME TO</h1>
+        <h2><i>Daily Fresh Back Store Back Store</i></h2>
+    </div>
+    <!--Navigation Bar-->
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Aisle
+            <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="dropdown-content">
+                <a href="P2_Snacks.html">Snack</a>
+                <a href="P2_Beverage.html">Beverage</a>
+                <a href="P2_Vege.html">Vegetable</a>
+                <a href="P2_meat.html">Meat</a>
+                <a href="soen287-asg3-Tiejun/P2_organic_groceries.html">Organic groceries</a>
+            </div>
+        </div>
+        <a href="P5_Sign_in.php">Sign in</a>
+        <a href="P4.php">My Cart</a>
+        <div class="dropdown">
+            <button class="dropbtn">Back Store
+            <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="dropdown-content">
+                <a href="P9.html">User</a>
+                <a href="P7.html">Product</a>
+                <a href="soen287-asg3-Tiejun/P11_order_list.php">Order List</a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-------------------------------------------------
+        Product Adding
+    --------------------------------------------------->
+    <section class="main">
+        <div class="path">
+            <br><a href="P7.html">&nbsp;&nbsp;&lt; Back to Product List</a>
+            <br><br><br>
+        </div>
+        <h2>Add Product:</h2>
+        <br><label>&nbsp;&nbsp;Title: </label><br>
+        <input type="text" id="productTitle" name="productTitle"><br>
+        <label for="description">&nbsp;&nbsp;Description: </label><br>
+        <textarea id="description" name="description" rows="10" cols="80">
+            Please type the description of the new product at here.
+        </textarea>
+        <br><button type="submit" value="Save">Save</button>
+    </section>
+
+
+</body>

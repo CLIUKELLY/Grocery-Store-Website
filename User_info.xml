@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<MYData>
+<login_details>
+	<name>Administrator</name>
+	<email>admin@dailyfresh.ca</email>
+	<password>00</password>
+</login_details>
+<login_details>
+	<name>Jerry Smith</name>
+	<email>jerry@gmail.com</email>
+	<password>11</password>
+</login_details>
+<login_details>
+	<name>Alina Green</name>
+	<email>alina@gmail.com</email>
+	<password>22</password>
+</login_details>
+<login_details>
+	<name>Marry Brown</name>
+	<email>marry@gmail.com</email>
+	<password>33</password>
+</login_details>
+<login_details>
+	<name>Joe Jones</name>
+	<email>joe@gmail.com</email>
+	<password>44</password>
+</login_details>
+<login_details>
+	<name>Sara Williams</name>
+	<email>sara@gmail.com</email>
+	<password>55</password>
+</login_details>
+</MYData>

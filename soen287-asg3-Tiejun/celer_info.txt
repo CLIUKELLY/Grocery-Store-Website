@@ -1,0 +1,10 @@
+                            <br>Product Number: 94070
+                            <br>$2.99 /un.
+                            <br>Organic product
+                            <br>
+                            <form action="buy.php?price=2.99&id='940740'&name='Celer'" method="post">
+                              <p>Quantity: <input type="text" name="Quantity" /></p>
+                              <input type="submit" value="Add to shopping cart" />
+                            </form>
+
+
