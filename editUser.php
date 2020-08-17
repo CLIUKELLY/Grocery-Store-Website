@@ -122,7 +122,7 @@ echo $email;
 </script>
 
 <body>
-<a style href=\"P9.php\" style=\"color:#FF0000;\">goback</a>
+<a style href="P9.php" style="color:#FF0000;">goback</a>
 </body>
 
 </html>
