@@ -63,7 +63,7 @@ function deleteacc(){
 }
 
 deleteacc();
-header("Location: P9.php");
+
 
 ?>
 <html>
@@ -71,6 +71,8 @@ header("Location: P9.php");
 </script>
 
 <body>
+<a style href=\"P9.php\" style=\"color:#FF0000;\">goback</a>
+
 </body>
 
 </html>
