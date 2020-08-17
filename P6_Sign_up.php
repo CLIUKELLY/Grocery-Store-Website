@@ -12,7 +12,7 @@ session_start();
   <body>
       <h2><I>Daily Fresh</I></h2>
       <form action="P6_register.php" method="POST">
-	    <p style="padding-left:220px;">Already have an account? <a href="P5_Sign_in.html">Sign in</a></p>
+	    <p style="padding-left:220px;">Already have an account? <a href="P5_Sign_in.php">Sign in</a></p>
 		<h3>Create new account</h3>
 	    <p>*Required fields</p>
 		<label>Title</label><br/>

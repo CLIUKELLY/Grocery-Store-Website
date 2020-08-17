@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<Title>
-		Snacks | Daily Fresh
+    <Title>
+        Snacks | Daily Fresh
     </Title>
     <link rel="stylesheet" href="P2_Snacks.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <div id="container">
-<body>
+
+    <body>
         <!--Banner-->
         <div class="header">
             <h1>WELCOME TO</h1>
@@ -31,7 +33,7 @@
                     <a href="P2_organic_groceries.html">Organic groceries</a>
                 </div>
             </div>
-            <a href="P5_Sign_in.html">Sign in</a>
+            <a href="P5_Sign_in.php">Sign in</a>
             <a href="P4.html">My Cart</a>
             <div class="dropdown">
                 <button class="dropbtn">Back Store
@@ -47,48 +49,45 @@
         <div class="path">
             <br>&nbsp;&nbsp;Home&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;Aisle&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;Snacks
         </div>
-<!--Snacks product-->
-<div class="product-list">
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <a href="P3_Snacks_PotatoChip.html">
-                    <img src="image_product/potato_chip.PNG" alt="potato_chip" width="200" height="230" 
-                    onmouseover="hoverPotato(this)" onmouseout="unhoverPotato(this)">
-                </a>
-                <br/>
-                <p class="product_name">Potato chips</p>
-                <p class="product_weight">235g</p>
-                <p class="product_price">$2.10 ea</p>
+        <!--Snacks product-->
+        <div class="product-list">
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <a href="P3_Snacks_PotatoChip.html">
+                            <img src="image_product/potato_chip.PNG" alt="potato_chip" width="200" height="230" onmouseover="hoverPotato(this)" onmouseout="unhoverPotato(this)">
+                        </a>
+                        <br/>
+                        <p class="product_name">Potato chips</p>
+                        <p class="product_weight">235g</p>
+                        <p class="product_price">$2.10 ea</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <a href="P3_Snacks_Popcorn.html">
+                            <img src="image_product/popcorn.PNG" alt="popcorn" width="200" height="230" onmouseover="hoverPopcorn(this)" onmouseout="unhoverPopcorn(this)">
+                        </a>
+                        <br/>
+                        <p class="product_name">Popcorn</p>
+                        <p class="product_weight">454g</p>
+                        <p class="product_price">$3.99 ea</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <a href="P3_Snacks_MixedNuts.html">
+                            <img src="image_product/mixed_nuts.PNG" alt="mixed_nuts" width="200" height="230" onmouseover="hoverNuts(this)" onmouseout="unhoverNuts(this)">
+                        </a>
+                        <br/>
+                        <p class="product_name">Mixed Nuts</p>
+                        <p class="product_weight">423g</p>
+                        <p class="product_price">$11.99 ea</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="column">
-            <div class="card">
-                <a href="P3_Snacks_Popcorn.html">
-                    <img src="image_product/popcorn.PNG" alt="popcorn" width="200" height="230"
-                    onmouseover="hoverPopcorn(this)" onmouseout="unhoverPopcorn(this)">
-                </a>
-                <br/>
-                <p class="product_name">Popcorn</p>
-                <p class="product_weight">454g</p>
-                <p class="product_price">$3.99 ea</p>
-            </div>
-        </div>
-        <div class="column">
-            <div class="card">
-                <a href="P3_Snacks_MixedNuts.html">
-                    <img src="image_product/mixed_nuts.PNG" alt="mixed_nuts" width="200" height="230"
-                    onmouseover="hoverNuts(this)" onmouseout="unhoverNuts(this)">
-                </a>
-                <br/>
-                <p class="product_name">Mixed Nuts</p>
-                <p class="product_weight">423g</p>
-                <p class="product_price">$11.99 ea</p>
-            </div>
-        </div>
-    </div>
-</div>
-<p class="textCenter">Please click on the selected product picture for next step!</p>
+        <p class="textCenter">Please click on the selected product picture for next step!</p>
 
         <!--Footer-->
         <div class="footer">
@@ -96,34 +95,34 @@
             </p>
         </div>
 
-<script>
-    function hoverPotato(element) {
-        element.setAttribute('src', 'image_product/potato_chip_open.png');
-    }
+        <script>
+            function hoverPotato(element) {
+                element.setAttribute('src', 'image_product/potato_chip_open.png');
+            }
 
-    function unhoverPotato(element) {
-        element.setAttribute('src', 'image_product/potato_chip.PNG');
-    }
+            function unhoverPotato(element) {
+                element.setAttribute('src', 'image_product/potato_chip.PNG');
+            }
 
-    function hoverPopcorn(element) {
-        element.setAttribute('src', 'image_product/popcorn_open.PNG');
-    }
+            function hoverPopcorn(element) {
+                element.setAttribute('src', 'image_product/popcorn_open.PNG');
+            }
 
-    function unhoverPopcorn(element) {
-        element.setAttribute('src', 'image_product/popcorn.PNG');
-    }
+            function unhoverPopcorn(element) {
+                element.setAttribute('src', 'image_product/popcorn.PNG');
+            }
 
-    function hoverNuts(element) {
-        element.setAttribute('src', 'image_product/mixed_nuts_open.png');
-    }
+            function hoverNuts(element) {
+                element.setAttribute('src', 'image_product/mixed_nuts_open.png');
+            }
 
-    function unhoverNuts(element) {
-        element.setAttribute('src', 'image_product/mixed_nuts.PNG');
-    }
+            function unhoverNuts(element) {
+                element.setAttribute('src', 'image_product/mixed_nuts.PNG');
+            }
+        </script>
 
-</script>
 
-
-</body>
+    </body>
 </div>
+
 </html>

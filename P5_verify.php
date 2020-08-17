@@ -19,6 +19,6 @@ if(isset($_POST['email']))
 	{header ("location: index.html");
 	}
 	else
-	{header ("location: P5_Sign_in.html");}
+	{header ("location: P5_Sign_in.php");}
 }
 ?>

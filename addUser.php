@@ -62,7 +62,7 @@
                     <a href="P2_organic_groceries.html">Organic groceries</a>
                 </div>
             </div>
-                <a href="P5_Sign_in.html">Sign in</a>
+                <a href="P5_Sign_in.php">Sign in</a>
                 <a href="P4.html">My Cart</a>
             <div class="dropdown">
                 <button class="dropbtn">Back Store

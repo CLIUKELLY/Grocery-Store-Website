@@ -1,15 +1,16 @@
 <html>
 </head>
-	<Title>
-		Mixed Nuts | Daily Fresh
-    </Title>
+<Title>
+    Mixed Nuts | Daily Fresh
+</Title>
 
-    <link rel="stylesheet" href="P3_Snacks.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="P3_Snacks.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <div id="container">
-<body>
+
+    <body>
         <!--Banner-->
         <div class="header">
             <h1>WELCOME TO</h1>
@@ -31,7 +32,7 @@
                     <a href="P2_organic_groceries.html">Organic groceries</a>
                 </div>
             </div>
-            <a href="P5_Sign_in.html">Sign in</a>
+            <a href="P5_Sign_in.php">Sign in</a>
             <a href="P4.php">My Cart</a>
             <div class="dropdown">
                 <button class="dropbtn">Back Store
@@ -45,63 +46,66 @@
             </div>
         </div>
         <div class="path">
-            <br>&nbsp;&nbsp;<a href="index.html">Home</a>&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;
-            Aisle&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;<a href="P2_Snacks.html">Snacks</a>&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;Mixed Nuts
+            <br>&nbsp;&nbsp;<a href="index.html">Home</a>&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp; Aisle&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;
+            <a href="P2_Snacks.html">Snacks</a>&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;Mixed Nuts
         </div>
 
-    <br/>
-    <br/>
-    <br/>
-    
-    <!--mixed_nuts-->
-    <div class="col-3 col-s-3 center">
-        <img src="image_product/mixed_nuts.PNG"  alt="Mixed nuts" width="200" height="230">
-    </div>
-    <div class="col-3 col-s-12">
-        <p>
-            <ul>
-                <li>
-                    <h1 id="mixed_nuts">Mixed nuts</h1>
-                </li>
-                <li>
-                    <p>$11.99</p>
-                </li>
-                <li>
-                    <h4>Ingredients:</h4>
-                    <p>Peanuts, almonds, walnuts, Brazil nuts, cashews, hazelnuts and pecans.</p>
-                </li>
-                <li>
-                    <h4>Weight:</h4>
-                    <p>423g</p>
-                </li>
-                <li>
-                    <button onclick="info()" class="button">More Description</button>
-                    <div class="breakWd"><p id="info"></p></div>
-                </li>
-                <li>
-                    <form action="P4.php">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" size="2" min="1" max="99" oninput="calPrice(this.value)" onchange="calPrice(this.value)">
-                        &nbsp&nbsp<label id="price">0</label><label>&nbspCAD &nbsp&nbsp</label>
-                        <button type="submit" class="button">Add to Cart</button>
-                        
-                    </form>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                </li>
-            </ul>
-        </p>
-    </div>
-    <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <!--mixed_nuts-->
+        <div class="col-3 col-s-3 center">
+            <img src="image_product/mixed_nuts.PNG" alt="Mixed nuts" width="200" height="230">
+        </div>
+        <div class="col-3 col-s-12">
+            <p>
+                <ul>
+                    <li>
+                        <h1 id="mixed_nuts">Mixed nuts</h1>
+                    </li>
+                    <li>
+                        <p>$11.99</p>
+                    </li>
+                    <li>
+                        <h4>Ingredients:</h4>
+                        <p>Peanuts, almonds, walnuts, Brazil nuts, cashews, hazelnuts and pecans.</p>
+                    </li>
+                    <li>
+                        <h4>Weight:</h4>
+                        <p>423g</p>
+                    </li>
+                    <li>
+                        <button onclick="info()" class="button">More Description</button>
+                        <div class="breakWd">
+                            <p id="info"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <form action="P4.php">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" size="2" min="1" max="99" oninput="calPrice(this.value)" onchange="calPrice(this.value)"> &nbsp&nbsp
+                            <label id="price">0</label><label>&nbspCAD &nbsp&nbsp</label>
+                            <button type="submit" class="button">Add to Cart</button>
+
+                        </form>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <br/>
         <!--Footer-->
         <div class="footer">
             <p>Address: 123 Rue ABC, Montreal, QC H8G 9X7</p>
         </div>
 
         <script src="P3_Snacks_MixedNuts.js"></script>
-</body>
+    </body>
 </div>
+
 </html>
