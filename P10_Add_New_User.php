@@ -1,8 +1,7 @@
-<?xml version = "1.0"  encoding = "utf-8" ?>
-
-<!DOCTYPE html>
 <?php session_start(); ?>
+<!DOCTYPE html>
 <html lang="en">
+
 <?php
         if(isset($_SESSION['username']) && isset($_SESSION['loginlogin'])){
             

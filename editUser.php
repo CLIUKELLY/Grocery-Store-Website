@@ -1,8 +1,8 @@
 <?php
-
+session_start();
 function deleteaddacc(){
 
-    session_start();
+
  
 
     if(isset($_SESSION['username']) && isset($_SESSION['loginlogin'])){
